@@ -144,7 +144,7 @@
   ],
   "selected_title": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)",
   "hook": {
-    "hook_text": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software.",
+    "hook_text": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade \u2014 it's a complete rewrite of how we build software.",
     "hook_duration_sec": 12,
     "visual_direction": "Fast montage of cutting-edge tech interfaces zooming into terminal code",
     "problem_statement": "Outdated approaches drain hours of developer productivity",
@@ -152,7 +152,7 @@
   },
   "script": {
     "selected_title": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)",
-    "hook": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software.",
+    "hook": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade \u2014 it's a complete rewrite of how we build software.",
     "target_duration_sec": 180,
     "estimated_word_count": 188,
     "scenes": [
@@ -160,7 +160,7 @@
         "scene_number": 1,
         "section": "HOOK",
         "duration_sec": 12,
-        "narration": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software.",
+        "narration": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade \u2014 it's a complete rewrite of how we build software.",
         "visual_direction": "Fast-paced montage of terminal windows, neural architecture diagrams, and autonomous execution pipelines.",
         "on_screen_text": "WHY AI AGENTS ARE DIFFERENT FROM CHATBOTS: THE SHIFT",
         "transition": "Glitch zoom cut"
@@ -220,7 +220,7 @@
         "transition": "Fade to dark"
       }
     ],
-    "full_narration": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software. If you've been watching the tech landscape over the past few months, one thing is unmistakable: the tools we rely on are fundamentally transforming. For years, developers were stuck writing repetitive boilerplate and manually stitching disparate services together. The promise of automation always seemed slightly out of reach. That brings us to Why AI Agents Are Different From Chatbots. Instead of treating systems as passive prompt-and-response utilities, we are now building proactive, multi-step agent pipelines that reason, validate, and execute autonomously. Let's look at real-world benchmarks. When you implement a structured state machine with verification gates, error recovery rates improve dramatically compared to single-shot generative models. The key insight here is simple: autonomy requires structured state, continuous feedback loops, and human-in-the-loop oversight before irreversible actions. If you found this breakdown valuable, drop a comment with your favorite workflow tool, hit subscribe for more autonomous engineering deep-dives, and check the description for all project resources.",
+    "full_narration": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade \u2014 it's a complete rewrite of how we build software. If you've been watching the tech landscape over the past few months, one thing is unmistakable: the tools we rely on are fundamentally transforming. For years, developers were stuck writing repetitive boilerplate and manually stitching disparate services together. The promise of automation always seemed slightly out of reach. That brings us to Why AI Agents Are Different From Chatbots. Instead of treating systems as passive prompt-and-response utilities, we are now building proactive, multi-step agent pipelines that reason, validate, and execute autonomously. Let's look at real-world benchmarks. When you implement a structured state machine with verification gates, error recovery rates improve dramatically compared to single-shot generative models. The key insight here is simple: autonomy requires structured state, continuous feedback loops, and human-in-the-loop oversight before irreversible actions. If you found this breakdown valuable, drop a comment with your favorite workflow tool, hit subscribe for more autonomous engineering deep-dives, and check the description for all project resources.",
     "call_to_action": "Subscribe and explore the code repo linked in the description."
   },
   "storyboard": [],
@@ -355,7 +355,7 @@
   "seo": null,
   "quality_checks": null,
   "validation_retry_count": 0,
-  "rendered_video_url": null,
+  "rendered_video_url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
   "final_package": null,
   "script_approved": false,
   "production_approved": false,

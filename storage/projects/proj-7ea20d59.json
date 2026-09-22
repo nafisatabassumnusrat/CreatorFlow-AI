@@ -1,7 +1,7 @@
 {
   "project_id": "proj-7ea20d59",
   "created_at": "2026-09-22T19:47:28.949607",
-  "updated_at": "2026-09-22T19:48:42.383598",
+  "updated_at": "2026-09-22T20:07:21.146772",
   "niche": "AI & Technology",
   "topic": "5 AI Agents Every Developer Should Know in 2026",
   "target_audience": "University students and beginner developers",
@@ -11,7 +11,7 @@
   "voice": "Neutral",
   "reference_channel": "",
   "brand_info": "",
-  "current_stage": "failed",
+  "current_stage": "completed",
   "stage_statuses": {
     "strategy": "COMPLETED",
     "titles": "COMPLETED",
@@ -25,7 +25,7 @@
     "seo": "COMPLETED",
     "quality_check": "COMPLETED",
     "approval_production": "COMPLETED",
-    "rendering": "FAILED",
+    "rendering": "COMPLETED",
     "image_gen": "COMPLETED",
     "video_gen": "COMPLETED"
   },
@@ -146,7 +146,7 @@
   ],
   "selected_title": "5 AI Agents Every Developer Should Know in 2026 (The 2026 Full Guide)",
   "hook": {
-    "hook_text": "Most people think 5 AI Agents Every Developer Should Know in 2026 is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software.",
+    "hook_text": "Most people think 5 AI Agents Every Developer Should Know in 2026 is just another passing tech trend. But what's happening right now isn't an upgrade \u2014 it's a complete rewrite of how we build software.",
     "hook_duration_sec": 12,
     "visual_direction": "Fast montage of cutting-edge tech interfaces zooming into terminal code",
     "problem_statement": "Outdated approaches drain hours of developer productivity",
@@ -154,7 +154,7 @@
   },
   "script": {
     "selected_title": "5 AI Agents Every Developer Should Know in 2026 (The 2026 Full Guide)",
-    "hook": "Most people think 5 AI Agents Every Developer Should Know in 2026 is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software.",
+    "hook": "Most people think 5 AI Agents Every Developer Should Know in 2026 is just another passing tech trend. But what's happening right now isn't an upgrade \u2014 it's a complete rewrite of how we build software.",
     "target_duration_sec": 300,
     "estimated_word_count": 192,
     "scenes": [
@@ -162,7 +162,7 @@
         "scene_number": 1,
         "section": "HOOK",
         "duration_sec": 12,
-        "narration": "Most people think 5 AI Agents Every Developer Should Know in 2026 is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software.",
+        "narration": "Most people think 5 AI Agents Every Developer Should Know in 2026 is just another passing tech trend. But what's happening right now isn't an upgrade \u2014 it's a complete rewrite of how we build software.",
         "visual_direction": "Fast-paced montage of terminal windows, neural architecture diagrams, and autonomous execution pipelines.",
         "on_screen_text": "5 AI AGENTS EVERY DEVELOPER SHOULD KNOW IN 2026: THE SHIFT",
         "transition": "Glitch zoom cut"
@@ -222,7 +222,7 @@
         "transition": "Fade to dark"
       }
     ],
-    "full_narration": "Most people think 5 AI Agents Every Developer Should Know in 2026 is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software. If you've been watching the tech landscape over the past few months, one thing is unmistakable: the tools we rely on are fundamentally transforming. For years, developers were stuck writing repetitive boilerplate and manually stitching disparate services together. The promise of automation always seemed slightly out of reach. That brings us to 5 AI Agents Every Developer Should Know in 2026. Instead of treating systems as passive prompt-and-response utilities, we are now building proactive, multi-step agent pipelines that reason, validate, and execute autonomously. Let's look at real-world benchmarks. When you implement a structured state machine with verification gates, error recovery rates improve dramatically compared to single-shot generative models. The key insight here is simple: autonomy requires structured state, continuous feedback loops, and human-in-the-loop oversight before irreversible actions. If you found this breakdown valuable, drop a comment with your favorite workflow tool, hit subscribe for more autonomous engineering deep-dives, and check the description for all project resources.",
+    "full_narration": "Most people think 5 AI Agents Every Developer Should Know in 2026 is just another passing tech trend. But what's happening right now isn't an upgrade \u2014 it's a complete rewrite of how we build software. If you've been watching the tech landscape over the past few months, one thing is unmistakable: the tools we rely on are fundamentally transforming. For years, developers were stuck writing repetitive boilerplate and manually stitching disparate services together. The promise of automation always seemed slightly out of reach. That brings us to 5 AI Agents Every Developer Should Know in 2026. Instead of treating systems as passive prompt-and-response utilities, we are now building proactive, multi-step agent pipelines that reason, validate, and execute autonomously. Let's look at real-world benchmarks. When you implement a structured state machine with verification gates, error recovery rates improve dramatically compared to single-shot generative models. The key insight here is simple: autonomy requires structured state, continuous feedback loops, and human-in-the-loop oversight before irreversible actions. If you found this breakdown valuable, drop a comment with your favorite workflow tool, hit subscribe for more autonomous engineering deep-dives, and check the description for all project resources.",
     "call_to_action": "Subscribe and explore the code repo linked in the description."
   },
   "storyboard": [
@@ -230,7 +230,7 @@
       "scene_id": "SCENE-01",
       "scene_number": 1,
       "duration_sec": 12,
-      "narration": "Most people think 5 AI Agents Every Developer Should Know in 2026 is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software.",
+      "narration": "Most people think 5 AI Agents Every Developer Should Know in 2026 is just another passing tech trend. But what's happening right now isn't an upgrade \u2014 it's a complete rewrite of how we build software.",
       "visual_description": "Fast-paced montage of terminal windows, neural architecture diagrams, and autonomous execution pipelines.",
       "suggested_visual_type": "AI Video",
       "image_prompt": "Cinematic 16:9 ultra-HD visual of Fast-paced montage of terminal windows, neural architecture diagrams, and autonomous execution pipelines., 8k resolution, futuristic tech aesthetic, volumetric neon studio lighting",
@@ -483,7 +483,7 @@
   },
   "seo": {
     "title": "5 AI Agents Every Developer Should Know in 2026 (The 2026 Full Guide)",
-    "description": "5 AI Agents Every Developer Should Know in 2026 (The 2026 Full Guide)\n\nIn this video, we break down 5 AI Agents Every Developer Should Know in 2026 for University students and beginner developers.\n\n📌 TIMESTAMPS / CHAPTERS:\n00:00 - 5 Ai Agents Every Developer Should Know In 2026: The Shift\n00:12 - Paradigm Shift\n00:30 - The Old Workflow Is Broken\n00:54 - Autonomous Architecture\n01:30 - Benchmarks & Results\n02:02 - 3 Golden Principles\n02:26 - Subscribe & Join Community\n\n💡 KEY TAKEAWAYS:\n• Why traditional prompts are being replaced by autonomous agent pipelines.\n• How structured state machines enable resilient self-correction and validation.\n• Real-world benchmarks and developer implementation steps for 2026.\n\n🔗 RESOURCES & LINKS:\n• GitHub Repository: https://github.com/creatorflow/autonomous-agents\n• Full Documentation & Architecture: https://creatorflow.ai/docs\n\n#AIAgents #SoftwareEngineering #Automation #Developers #AI2026",
+    "description": "5 AI Agents Every Developer Should Know in 2026 (The 2026 Full Guide)\n\nIn this video, we break down 5 AI Agents Every Developer Should Know in 2026 for University students and beginner developers.\n\n\ud83d\udccc TIMESTAMPS / CHAPTERS:\n00:00 - 5 Ai Agents Every Developer Should Know In 2026: The Shift\n00:12 - Paradigm Shift\n00:30 - The Old Workflow Is Broken\n00:54 - Autonomous Architecture\n01:30 - Benchmarks & Results\n02:02 - 3 Golden Principles\n02:26 - Subscribe & Join Community\n\n\ud83d\udca1 KEY TAKEAWAYS:\n\u2022 Why traditional prompts are being replaced by autonomous agent pipelines.\n\u2022 How structured state machines enable resilient self-correction and validation.\n\u2022 Real-world benchmarks and developer implementation steps for 2026.\n\n\ud83d\udd17 RESOURCES & LINKS:\n\u2022 GitHub Repository: https://github.com/creatorflow/autonomous-agents\n\u2022 Full Documentation & Architecture: https://creatorflow.ai/docs\n\n#AIAgents #SoftwareEngineering #Automation #Developers #AI2026",
     "short_description": "A complete, autonomous breakdown of 5 AI Agents Every Developer Should Know in 2026 for University students and beginner developers.",
     "chapters": [
       {
@@ -541,11 +541,11 @@
       "#SoftwareEngineering",
       "#AI2026"
     ],
-    "pinned_comment": "👋 Question of the day: What is your biggest challenge when working with AI agents? Let us know in the comments below!"
+    "pinned_comment": "\ud83d\udc4b Question of the day: What is your biggest challenge when working with AI agents? Let us know in the comments below!"
   },
   "quality_checks": {
     "passed": true,
-    "checked_at": "19:48:10",
+    "checked_at": "20:01:57",
     "checks": [
       {
         "category": "Content",
@@ -626,8 +626,82 @@
     ]
   },
   "validation_retry_count": 0,
-  "rendered_video_url": null,
-  "final_package": null,
+  "rendered_video_url": "E:\\youtube\\storage\\media\\proj-7ea20d59\\final_youtube_video.mp4",
+  "final_package": {
+    "video_id": "proj-7ea20d59",
+    "title": "5 AI Agents Every Developer Should Know in 2026 (The 2026 Full Guide)",
+    "description": "5 AI Agents Every Developer Should Know in 2026 (The 2026 Full Guide)\n\nIn this video, we break down 5 AI Agents Every Developer Should Know in 2026 for University students and beginner developers.\n\n\ud83d\udccc TIMESTAMPS / CHAPTERS:\n00:00 - 5 Ai Agents Every Developer Should Know In 2026: The Shift\n00:12 - Paradigm Shift\n00:30 - The Old Workflow Is Broken\n00:54 - Autonomous Architecture\n01:30 - Benchmarks & Results\n02:02 - 3 Golden Principles\n02:26 - Subscribe & Join Community\n\n\ud83d\udca1 KEY TAKEAWAYS:\n\u2022 Why traditional prompts are being replaced by autonomous agent pipelines.\n\u2022 How structured state machines enable resilient self-correction and validation.\n\u2022 Real-world benchmarks and developer implementation steps for 2026.\n\n\ud83d\udd17 RESOURCES & LINKS:\n\u2022 GitHub Repository: https://github.com/creatorflow/autonomous-agents\n\u2022 Full Documentation & Architecture: https://creatorflow.ai/docs\n\n#AIAgents #SoftwareEngineering #Automation #Developers #AI2026",
+    "thumbnail_url": "E:\\youtube\\storage\\media\\proj-7ea20d59\\thumbnail.jpg",
+    "video_url": "E:\\youtube\\storage\\media\\proj-7ea20d59\\final_youtube_video.mp4",
+    "duration_sec": 160,
+    "resolution": "1280x720 (HD 16:9)",
+    "file_size_mb": 4.13,
+    "seo": {
+      "title": "5 AI Agents Every Developer Should Know in 2026 (The 2026 Full Guide)",
+      "description": "5 AI Agents Every Developer Should Know in 2026 (The 2026 Full Guide)\n\nIn this video, we break down 5 AI Agents Every Developer Should Know in 2026 for University students and beginner developers.\n\n\ud83d\udccc TIMESTAMPS / CHAPTERS:\n00:00 - 5 Ai Agents Every Developer Should Know In 2026: The Shift\n00:12 - Paradigm Shift\n00:30 - The Old Workflow Is Broken\n00:54 - Autonomous Architecture\n01:30 - Benchmarks & Results\n02:02 - 3 Golden Principles\n02:26 - Subscribe & Join Community\n\n\ud83d\udca1 KEY TAKEAWAYS:\n\u2022 Why traditional prompts are being replaced by autonomous agent pipelines.\n\u2022 How structured state machines enable resilient self-correction and validation.\n\u2022 Real-world benchmarks and developer implementation steps for 2026.\n\n\ud83d\udd17 RESOURCES & LINKS:\n\u2022 GitHub Repository: https://github.com/creatorflow/autonomous-agents\n\u2022 Full Documentation & Architecture: https://creatorflow.ai/docs\n\n#AIAgents #SoftwareEngineering #Automation #Developers #AI2026",
+      "short_description": "A complete, autonomous breakdown of 5 AI Agents Every Developer Should Know in 2026 for University students and beginner developers.",
+      "chapters": [
+        {
+          "time": "00:00",
+          "title": "5 Ai Agents Every Developer Should Know In 2026: The Shift"
+        },
+        {
+          "time": "00:12",
+          "title": "Paradigm Shift"
+        },
+        {
+          "time": "00:30",
+          "title": "The Old Workflow Is Broken"
+        },
+        {
+          "time": "00:54",
+          "title": "Autonomous Architecture"
+        },
+        {
+          "time": "01:30",
+          "title": "Benchmarks & Results"
+        },
+        {
+          "time": "02:02",
+          "title": "3 Golden Principles"
+        },
+        {
+          "time": "02:26",
+          "title": "Subscribe & Join Community"
+        }
+      ],
+      "keywords": [
+        "5 ai agents every developer should know in 2026",
+        "ai agents",
+        "autonomous agents",
+        "developer tools 2026",
+        "software architecture",
+        "ai production pipeline",
+        "ai & technology"
+      ],
+      "tags": [
+        "5 AI Agents Every Developer Should Know in 2026",
+        "AI Agents",
+        "Autonomous Coding",
+        "Software Engineering",
+        "LLM Orchestration",
+        "Developer Productivity",
+        "Tech Tutorial 2026",
+        "CreatorFlow AI"
+      ],
+      "hashtags": [
+        "#AIAgents",
+        "#Coding",
+        "#TechNews",
+        "#SoftwareEngineering",
+        "#AI2026"
+      ],
+      "pinned_comment": "\ud83d\udc4b Question of the day: What is your biggest challenge when working with AI agents? Let us know in the comments below!"
+    },
+    "created_at": "2026-09-22 20:07:21",
+    "is_ready_for_review": true,
+    "disclaimer": "Generated by CreatorFlow AI. Please review and verify content before uploading to YouTube."
+  },
   "script_approved": true,
   "production_approved": true,
   "waiting_for_approval_type": null,
@@ -995,7 +1069,119 @@
       "action": "Rendering failed: ",
       "details": null,
       "status": "error"
+    },
+    {
+      "timestamp": "20:01:52",
+      "stage": "System",
+      "action": "Manual replan initiated by creator. Resetting stage pipeline.",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:01:52",
+      "stage": "Content Strategy",
+      "action": "Analyzing topic, niche, and target viewer intent...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:01:52",
+      "stage": "Content Strategy",
+      "action": "Selected content angle: 'Why Everything You Knew About 5 AI Agents Every Developer Should Know in 2026 Is Changing'",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:01:57",
+      "stage": "Quality Control Agent",
+      "action": "Running comprehensive quality inspection (Content, Production, Package)...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:01:57",
+      "stage": "Quality Control Agent",
+      "action": "Quality check PASSED. Pausing for Human Approval Gate: Approve Production.",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:01:59",
+      "stage": "Human Approval",
+      "action": "Production package approved by creator. Proceeding to video render...",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:01:59",
+      "stage": "Video Assembly Engine",
+      "action": "Commencing FFmpeg video compositing (Visuals + Voice + Music + Text)...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:01:59",
+      "stage": "Video Assembly Engine",
+      "action": "Rendering failed: ",
+      "details": null,
+      "status": "error"
+    },
+    {
+      "timestamp": "20:02:09",
+      "stage": "Human Approval",
+      "action": "Production package approved by creator. Proceeding to video render...",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:02:09",
+      "stage": "Video Assembly Engine",
+      "action": "Commencing FFmpeg video compositing (Visuals + Voice + Music + Text)...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:02:09",
+      "stage": "Video Assembly Engine",
+      "action": "Rendering failed: ",
+      "details": null,
+      "status": "error"
+    },
+    {
+      "timestamp": "20:02:10",
+      "stage": "Human Approval",
+      "action": "Production package approved by creator. Proceeding to video render...",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:02:10",
+      "stage": "Video Assembly Engine",
+      "action": "Commencing FFmpeg video compositing (Visuals + Voice + Music + Text)...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:02:10",
+      "stage": "Video Assembly Engine",
+      "action": "Rendering failed: ",
+      "details": null,
+      "status": "error"
+    },
+    {
+      "timestamp": "20:07:12",
+      "stage": "Video Assembly Engine",
+      "action": "Commencing FFmpeg video compositing (Visuals + Voice + Music + Text)...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:07:21",
+      "stage": "Video Assembly Engine",
+      "action": "Production successfully completed! MP4 ready (4.13 MB).",
+      "details": null,
+      "status": "success"
     }
   ],
-  "error_message": "Rendering error: "
+  "error_message": null
 }
