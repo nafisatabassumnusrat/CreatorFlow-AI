@@ -146,7 +146,7 @@
   ],
   "selected_title": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)",
   "hook": {
-    "hook_text": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software.",
+    "hook_text": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade \u2014 it's a complete rewrite of how we build software.",
     "hook_duration_sec": 12,
     "visual_direction": "Fast montage of cutting-edge tech interfaces zooming into terminal code",
     "problem_statement": "Outdated approaches drain hours of developer productivity",
@@ -154,7 +154,7 @@
   },
   "script": {
     "selected_title": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)",
-    "hook": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software.",
+    "hook": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade \u2014 it's a complete rewrite of how we build software.",
     "target_duration_sec": 180,
     "estimated_word_count": 188,
     "scenes": [
@@ -162,7 +162,7 @@
         "scene_number": 1,
         "section": "HOOK",
         "duration_sec": 12,
-        "narration": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software.",
+        "narration": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade \u2014 it's a complete rewrite of how we build software.",
         "visual_direction": "Fast-paced montage of terminal windows, neural architecture diagrams, and autonomous execution pipelines.",
         "on_screen_text": "WHY AI AGENTS ARE DIFFERENT FROM CHATBOTS: THE SHIFT",
         "transition": "Glitch zoom cut"
@@ -222,7 +222,7 @@
         "transition": "Fade to dark"
       }
     ],
-    "full_narration": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software. If you've been watching the tech landscape over the past few months, one thing is unmistakable: the tools we rely on are fundamentally transforming. For years, developers were stuck writing repetitive boilerplate and manually stitching disparate services together. The promise of automation always seemed slightly out of reach. That brings us to Why AI Agents Are Different From Chatbots. Instead of treating systems as passive prompt-and-response utilities, we are now building proactive, multi-step agent pipelines that reason, validate, and execute autonomously. Let's look at real-world benchmarks. When you implement a structured state machine with verification gates, error recovery rates improve dramatically compared to single-shot generative models. The key insight here is simple: autonomy requires structured state, continuous feedback loops, and human-in-the-loop oversight before irreversible actions. If you found this breakdown valuable, drop a comment with your favorite workflow tool, hit subscribe for more autonomous engineering deep-dives, and check the description for all project resources.",
+    "full_narration": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade \u2014 it's a complete rewrite of how we build software. If you've been watching the tech landscape over the past few months, one thing is unmistakable: the tools we rely on are fundamentally transforming. For years, developers were stuck writing repetitive boilerplate and manually stitching disparate services together. The promise of automation always seemed slightly out of reach. That brings us to Why AI Agents Are Different From Chatbots. Instead of treating systems as passive prompt-and-response utilities, we are now building proactive, multi-step agent pipelines that reason, validate, and execute autonomously. Let's look at real-world benchmarks. When you implement a structured state machine with verification gates, error recovery rates improve dramatically compared to single-shot generative models. The key insight here is simple: autonomy requires structured state, continuous feedback loops, and human-in-the-loop oversight before irreversible actions. If you found this breakdown valuable, drop a comment with your favorite workflow tool, hit subscribe for more autonomous engineering deep-dives, and check the description for all project resources.",
     "call_to_action": "Subscribe and explore the code repo linked in the description."
   },
   "storyboard": [
@@ -230,7 +230,7 @@
       "scene_id": "SCENE-01",
       "scene_number": 1,
       "duration_sec": 12,
-      "narration": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software.",
+      "narration": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade \u2014 it's a complete rewrite of how we build software.",
       "visual_description": "Fast-paced montage of terminal windows, neural architecture diagrams, and autonomous execution pipelines.",
       "suggested_visual_type": "AI Video",
       "image_prompt": "Cinematic 16:9 ultra-HD visual of Fast-paced montage of terminal windows, neural architecture diagrams, and autonomous execution pipelines., 8k resolution, futuristic tech aesthetic, volumetric neon studio lighting",
@@ -461,11 +461,11 @@
     "visual_hierarchy_score": 9,
     "overall_score": 9.6,
     "is_selected": true,
-    "image_url": "E:\\youtube\\storage\\media\\demo-6adf59be\\thumbnail.jpg"
+    "image_url": "assets/demo_thumbnail.jpg"
   },
   "seo": {
     "title": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)",
-    "description": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)\n\nIn this video, we break down Why AI Agents Are Different From Chatbots for Beginner developers and computer science students.\n\n📌 TIMESTAMPS / CHAPTERS:\n00:00 - Why Ai Agents Are Different From Chatbots: The Shift\n00:12 - Paradigm Shift\n00:30 - The Old Workflow Is Broken\n00:54 - Autonomous Architecture\n01:30 - Benchmarks & Results\n02:02 - 3 Golden Principles\n02:26 - Subscribe & Join Community\n\n💡 KEY TAKEAWAYS:\n• Why traditional prompts are being replaced by autonomous agent pipelines.\n• How structured state machines enable resilient self-correction and validation.\n• Real-world benchmarks and developer implementation steps for 2026.\n\n🔗 RESOURCES & LINKS:\n• GitHub Repository: https://github.com/creatorflow/autonomous-agents\n• Full Documentation & Architecture: https://creatorflow.ai/docs\n\n#AIAgents #SoftwareEngineering #Automation #Developers #AI2026",
+    "description": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)\n\nIn this video, we break down Why AI Agents Are Different From Chatbots for Beginner developers and computer science students.\n\n\ud83d\udccc TIMESTAMPS / CHAPTERS:\n00:00 - Why Ai Agents Are Different From Chatbots: The Shift\n00:12 - Paradigm Shift\n00:30 - The Old Workflow Is Broken\n00:54 - Autonomous Architecture\n01:30 - Benchmarks & Results\n02:02 - 3 Golden Principles\n02:26 - Subscribe & Join Community\n\n\ud83d\udca1 KEY TAKEAWAYS:\n\u2022 Why traditional prompts are being replaced by autonomous agent pipelines.\n\u2022 How structured state machines enable resilient self-correction and validation.\n\u2022 Real-world benchmarks and developer implementation steps for 2026.\n\n\ud83d\udd17 RESOURCES & LINKS:\n\u2022 GitHub Repository: https://github.com/creatorflow/autonomous-agents\n\u2022 Full Documentation & Architecture: https://creatorflow.ai/docs\n\n#AIAgents #SoftwareEngineering #Automation #Developers #AI2026",
     "short_description": "A complete, autonomous breakdown of Why AI Agents Are Different From Chatbots for Beginner developers and computer science students.",
     "chapters": [
       {
@@ -523,7 +523,7 @@
       "#SoftwareEngineering",
       "#AI2026"
     ],
-    "pinned_comment": "👋 Question of the day: What is your biggest challenge when working with AI agents? Let us know in the comments below!"
+    "pinned_comment": "\ud83d\udc4b Question of the day: What is your biggest challenge when working with AI agents? Let us know in the comments below!"
   },
   "quality_checks": {
     "passed": true,
@@ -608,11 +608,11 @@
     ]
   },
   "validation_retry_count": 0,
-  "rendered_video_url": "E:\\youtube\\storage\\media\\demo-6adf59be\\final_youtube_video.mp4",
+  "rendered_video_url": "assets/demo_video.mp4",
   "final_package": {
     "video_id": "demo-6adf59be",
     "title": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)",
-    "description": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)\n\nIn this video, we break down Why AI Agents Are Different From Chatbots for Beginner developers and computer science students.\n\n📌 TIMESTAMPS / CHAPTERS:\n00:00 - Why Ai Agents Are Different From Chatbots: The Shift\n00:12 - Paradigm Shift\n00:30 - The Old Workflow Is Broken\n00:54 - Autonomous Architecture\n01:30 - Benchmarks & Results\n02:02 - 3 Golden Principles\n02:26 - Subscribe & Join Community\n\n💡 KEY TAKEAWAYS:\n• Why traditional prompts are being replaced by autonomous agent pipelines.\n• How structured state machines enable resilient self-correction and validation.\n• Real-world benchmarks and developer implementation steps for 2026.\n\n🔗 RESOURCES & LINKS:\n• GitHub Repository: https://github.com/creatorflow/autonomous-agents\n• Full Documentation & Architecture: https://creatorflow.ai/docs\n\n#AIAgents #SoftwareEngineering #Automation #Developers #AI2026",
+    "description": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)\n\nIn this video, we break down Why AI Agents Are Different From Chatbots for Beginner developers and computer science students.\n\n\ud83d\udccc TIMESTAMPS / CHAPTERS:\n00:00 - Why Ai Agents Are Different From Chatbots: The Shift\n00:12 - Paradigm Shift\n00:30 - The Old Workflow Is Broken\n00:54 - Autonomous Architecture\n01:30 - Benchmarks & Results\n02:02 - 3 Golden Principles\n02:26 - Subscribe & Join Community\n\n\ud83d\udca1 KEY TAKEAWAYS:\n\u2022 Why traditional prompts are being replaced by autonomous agent pipelines.\n\u2022 How structured state machines enable resilient self-correction and validation.\n\u2022 Real-world benchmarks and developer implementation steps for 2026.\n\n\ud83d\udd17 RESOURCES & LINKS:\n\u2022 GitHub Repository: https://github.com/creatorflow/autonomous-agents\n\u2022 Full Documentation & Architecture: https://creatorflow.ai/docs\n\n#AIAgents #SoftwareEngineering #Automation #Developers #AI2026",
     "thumbnail_url": "E:\\youtube\\storage\\media\\demo-6adf59be\\thumbnail.jpg",
     "video_url": "E:\\youtube\\storage\\media\\demo-6adf59be\\final_youtube_video.mp4",
     "duration_sec": 160,
@@ -620,7 +620,7 @@
     "file_size_mb": 4.11,
     "seo": {
       "title": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)",
-      "description": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)\n\nIn this video, we break down Why AI Agents Are Different From Chatbots for Beginner developers and computer science students.\n\n📌 TIMESTAMPS / CHAPTERS:\n00:00 - Why Ai Agents Are Different From Chatbots: The Shift\n00:12 - Paradigm Shift\n00:30 - The Old Workflow Is Broken\n00:54 - Autonomous Architecture\n01:30 - Benchmarks & Results\n02:02 - 3 Golden Principles\n02:26 - Subscribe & Join Community\n\n💡 KEY TAKEAWAYS:\n• Why traditional prompts are being replaced by autonomous agent pipelines.\n• How structured state machines enable resilient self-correction and validation.\n• Real-world benchmarks and developer implementation steps for 2026.\n\n🔗 RESOURCES & LINKS:\n• GitHub Repository: https://github.com/creatorflow/autonomous-agents\n• Full Documentation & Architecture: https://creatorflow.ai/docs\n\n#AIAgents #SoftwareEngineering #Automation #Developers #AI2026",
+      "description": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)\n\nIn this video, we break down Why AI Agents Are Different From Chatbots for Beginner developers and computer science students.\n\n\ud83d\udccc TIMESTAMPS / CHAPTERS:\n00:00 - Why Ai Agents Are Different From Chatbots: The Shift\n00:12 - Paradigm Shift\n00:30 - The Old Workflow Is Broken\n00:54 - Autonomous Architecture\n01:30 - Benchmarks & Results\n02:02 - 3 Golden Principles\n02:26 - Subscribe & Join Community\n\n\ud83d\udca1 KEY TAKEAWAYS:\n\u2022 Why traditional prompts are being replaced by autonomous agent pipelines.\n\u2022 How structured state machines enable resilient self-correction and validation.\n\u2022 Real-world benchmarks and developer implementation steps for 2026.\n\n\ud83d\udd17 RESOURCES & LINKS:\n\u2022 GitHub Repository: https://github.com/creatorflow/autonomous-agents\n\u2022 Full Documentation & Architecture: https://creatorflow.ai/docs\n\n#AIAgents #SoftwareEngineering #Automation #Developers #AI2026",
       "short_description": "A complete, autonomous breakdown of Why AI Agents Are Different From Chatbots for Beginner developers and computer science students.",
       "chapters": [
         {
@@ -678,7 +678,7 @@
         "#SoftwareEngineering",
         "#AI2026"
       ],
-      "pinned_comment": "👋 Question of the day: What is your biggest challenge when working with AI agents? Let us know in the comments below!"
+      "pinned_comment": "\ud83d\udc4b Question of the day: What is your biggest challenge when working with AI agents? Let us know in the comments below!"
     },
     "created_at": "2026-09-22 17:11:36",
     "is_ready_for_review": true,

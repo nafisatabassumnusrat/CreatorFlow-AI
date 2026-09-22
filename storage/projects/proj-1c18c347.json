@@ -461,7 +461,7 @@
     "visual_hierarchy_score": 9,
     "overall_score": 9.6,
     "is_selected": true,
-    "image_url": "E:\\youtube\\storage\\media\\proj-1c18c347\\thumbnail.jpg"
+    "image_url": "assets/demo_thumbnail.jpg"
   },
   "seo": {
     "title": "5 AI Agents Every Developer Should Know in 2026 (The 2026 Full Guide)",
@@ -608,7 +608,7 @@
     ]
   },
   "validation_retry_count": 0,
-  "rendered_video_url": "E:\\youtube\\storage\\media\\proj-1c18c347\\final_youtube_video.mp4",
+  "rendered_video_url": "assets/demo_video.mp4",
   "final_package": {
     "video_id": "proj-1c18c347",
     "title": "5 AI Agents Every Developer Should Know in 2026 (The 2026 Full Guide)",

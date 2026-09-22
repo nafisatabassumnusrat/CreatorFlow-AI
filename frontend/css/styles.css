@@ -122,6 +122,10 @@ body {
   transition: background-color var(--transition-base), color var(--transition-base);
 }
 
+.hidden {
+  display: none !important;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5 {
   font-weight: 700;
@@ -1327,6 +1331,7 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   padding: 2rem;
   color: white;
+  width: 100%;
 }
 
 .video-placeholder-notice h4 {

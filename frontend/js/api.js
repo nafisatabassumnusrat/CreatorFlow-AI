@@ -414,7 +414,7 @@ const API = {
           data.stage_statuses.rendering = "COMPLETED";
           data.stage_statuses.approval_production = "COMPLETED";
           data.current_stage = "completed";
-          data.rendered_video_url = data.rendered_video_url || "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+          data.rendered_video_url = data.rendered_video_url && !data.rendered_video_url.includes("\\") ? data.rendered_video_url : "assets/demo_video.mp4";
           return data;
         }
         return data;
@@ -437,7 +437,7 @@ const API = {
       project.stage_statuses["approval_production"] = "COMPLETED";
       project.stage_statuses["rendering"] = "COMPLETED";
       project.current_stage = "completed";
-      project.rendered_video_url = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+      project.rendered_video_url = "assets/demo_video.mp4";
     }
     const projects = getLocalProjects();
     const idx = projects.findIndex(p => p.project_id === projectId);

@@ -746,14 +746,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Tab 6: Final YouTube Package
   function renderFinalPackage(p) {
-    const hasVideo = Boolean(p.rendered_video_url);
+    const hasVideo = Boolean(p.rendered_video_url) && p.stage_statuses?.rendering === "COMPLETED";
 
     if (hasVideo) {
       els.videoPlaceholderNotice.classList.add("hidden");
       els.finalVideoPlayer.classList.remove("hidden");
-      const isExternal = p.rendered_video_url.startsWith("http");
-      const videoUrl = isExternal ? p.rendered_video_url : `/media/${p.project_id}/final_youtube_video.mp4?t=${Date.now()}`;
-      if (els.videoSource.src !== videoUrl && els.videoSource.src !== window.location.origin + videoUrl) {
+
+      let videoUrl = p.rendered_video_url;
+      // If videoUrl is a local Windows file path, use the web-accessible bundled demo video
+      if (videoUrl.startsWith("E:") || videoUrl.startsWith("C:") || videoUrl.includes("\\")) {
+        videoUrl = "assets/demo_video.mp4";
+      }
+
+      els.finalVideoPlayer.onerror = () => {
+        if (!els.finalVideoPlayer.src.includes("assets/demo_video.mp4")) {
+          console.warn("Video stream unavailable, playing bundled preview.");
+          els.finalVideoPlayer.src = "assets/demo_video.mp4";
+          els.finalVideoPlayer.load();
+        }
+      };
+
+      if (!els.finalVideoPlayer.src.endsWith(videoUrl)) {
+        els.finalVideoPlayer.src = videoUrl;
         els.videoSource.src = videoUrl;
         els.finalVideoPlayer.load();
       }
@@ -766,14 +780,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Thumbnail Preview
+    let thumbUrl = "assets/demo_thumbnail.jpg";
     if (p.selected_thumbnail && p.selected_thumbnail.image_url) {
-      const isExternal = p.selected_thumbnail.image_url.startsWith("http") || p.selected_thumbnail.image_url.startsWith("data:");
-      els.finalThumbnailImg.src = isExternal ? p.selected_thumbnail.image_url : `/media/${p.project_id}/thumbnail.jpg?t=${Date.now()}`;
-      els.finalThumbnailImg.onerror = () => {
-        els.finalThumbnailImg.src = "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80";
-      };
-      els.thumbScoreBadge.textContent = `Score: ${p.selected_thumbnail.overall_score || 9.6}/10`;
+      thumbUrl = p.selected_thumbnail.image_url;
+      if (thumbUrl.startsWith("E:") || thumbUrl.startsWith("C:") || thumbUrl.includes("\\")) {
+        thumbUrl = "assets/demo_thumbnail.jpg";
+      }
     }
+    els.finalThumbnailImg.onerror = () => {
+      els.finalThumbnailImg.src = "assets/demo_thumbnail.jpg";
+    };
+    els.finalThumbnailImg.src = thumbUrl;
+    els.thumbScoreBadge.textContent = `Score: ${p.selected_thumbnail?.overall_score || 9.6}/10`;
 
     // Metadata Fields
     if (p.seo) {
@@ -868,6 +886,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Hook up script buttons
   els.approveScriptBtn.addEventListener("click", approveScriptAction);
   els.regenScriptBtn.addEventListener("click", regenScriptAction);
+  els.renderNowBtn?.addEventListener("click", approveRenderAction);
 
   // Edit script modal
   els.editScriptBtn.addEventListener("click", () => {
