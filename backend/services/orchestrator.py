@@ -600,7 +600,13 @@ class YouTubeProductionAgent:
             primary_thumb = MEDIA_DIR / state.project_id / "thumbnail.jpg"
             if state.selected_thumbnail.image_url and os.path.exists(state.selected_thumbnail.image_url):
                 import shutil
-                shutil.copyfile(state.selected_thumbnail.image_url, primary_thumb)
+                try:
+                    src_p = Path(state.selected_thumbnail.image_url).resolve()
+                    dst_p = primary_thumb.resolve()
+                    if src_p != dst_p:
+                        shutil.copyfile(src_p, dst_p)
+                except Exception:
+                    pass
                 state.selected_thumbnail.image_url = str(primary_thumb)
 
             if state.final_package:

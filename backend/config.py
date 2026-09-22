@@ -3,7 +3,13 @@ from pathlib import Path
 
 # Base directories
 BASE_DIR = Path(__file__).resolve().parent.parent
-STORAGE_DIR = BASE_DIR / "storage"
+
+# On Vercel / serverless environment, write storage to /tmp to avoid read-only errors
+if os.getenv("VERCEL") or os.getenv("AWS_LAMBDA_FUNCTION_NAME"):
+    STORAGE_DIR = Path("/tmp/creatorflow_storage")
+else:
+    STORAGE_DIR = BASE_DIR / "storage"
+
 PROJECTS_DIR = STORAGE_DIR / "projects"
 MEDIA_DIR = STORAGE_DIR / "media"
 FONTS_DIR = BASE_DIR / "assets" / "fonts"
@@ -12,6 +18,19 @@ FONTS_DIR = BASE_DIR / "assets" / "fonts"
 STORAGE_DIR.mkdir(parents=True, exist_ok=True)
 PROJECTS_DIR.mkdir(parents=True, exist_ok=True)
 MEDIA_DIR.mkdir(parents=True, exist_ok=True)
+
+# Copy seed projects on serverless cold-start
+if os.getenv("VERCEL") or os.getenv("AWS_LAMBDA_FUNCTION_NAME"):
+    seed_projects = BASE_DIR / "storage" / "projects"
+    if seed_projects.exists():
+        import shutil
+        for f in seed_projects.glob("*.json"):
+            dest = PROJECTS_DIR / f.name
+            if not dest.exists():
+                try:
+                    shutil.copy2(f, dest)
+                except Exception:
+                    pass
 
 # API Keys (optional; fallback to high-fidelity local providers if unset)
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")

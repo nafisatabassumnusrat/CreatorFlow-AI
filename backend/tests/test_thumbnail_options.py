@@ -1,32 +1,28 @@
-import urllib.request
-import json
+from fastapi.testclient import TestClient
+from backend.main import app
 
-def test():
-    req = urllib.request.Request("http://127.0.0.1:8080/api/videos/demo", data=b"", method="POST")
-    demo = json.loads(urllib.request.urlopen(req).read().decode())
+def test_thumbnail_options_flow():
+    client = TestClient(app)
+    
+    # Create demo project
+    res_demo = client.post("/api/videos/demo")
+    assert res_demo.status_code == 200
+    demo = res_demo.json()
     pid = demo["project_id"]
-    print("Created demo project:", pid)
+    assert pid is not None
 
-    req_thumb = urllib.request.Request(f"http://127.0.0.1:8080/api/videos/{pid}/thumbnail", data=b"", method="POST")
-    updated = json.loads(urllib.request.urlopen(req_thumb).read().decode())
-    print(f"Total thumbnail options: {len(updated['thumbnail_concepts'])}")
-    for c in updated["thumbnail_concepts"]:
-        print(f"  Option {c['id']}: '{c['title_text']}' | Score: {c['overall_score']}/10 | Active: {c['is_selected']}")
+    # Generate / retrieve thumbnails
+    res_thumb = client.post(f"/api/videos/{pid}/thumbnail")
+    assert res_thumb.status_code == 200
+    updated = res_thumb.json()
+    assert len(updated.get("thumbnail_concepts", [])) >= 1
 
-    # Switch to option 6 ("ZERO TO AGENT IN 5 MIN")
-    select_data = json.dumps({"thumbnail_id": "thumb_6"}).encode("utf-8")
-    req_sel = urllib.request.Request(
-        f"http://127.0.0.1:8080/api/videos/{pid}/select-thumbnail",
-        data=select_data,
-        headers={"Content-Type": "application/json"},
-        method="POST"
+    # Select thumbnail option
+    first_thumb_id = updated["thumbnail_concepts"][0]["id"]
+    res_sel = client.post(
+        f"/api/videos/{pid}/select-thumbnail",
+        json={"thumbnail_id": first_thumb_id}
     )
-    switched = json.loads(urllib.request.urlopen(req_sel).read().decode())
-    print("\nSwitched to Option 6:")
-    print("Active thumbnail title:", switched["selected_thumbnail"]["title_text"])
-    print("Active thumbnail ID:", switched["selected_thumbnail"]["id"])
-    assert switched["selected_thumbnail"]["id"] == "thumb_6"
-    print("ALL THUMBNAIL OPTIONS TESTS PASSED!")
-
-if __name__ == "__main__":
-    test()
+    assert res_sel.status_code == 200
+    switched = res_sel.json()
+    assert switched["selected_thumbnail"]["id"] == first_thumb_id

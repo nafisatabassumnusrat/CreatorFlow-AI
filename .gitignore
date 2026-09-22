@@ -14,7 +14,7 @@ ENV/
 .env.local
 
 # Temporary & Cache files
-storage/media/temp_assembly/
+storage/media/**/temp_assembly/
 *.tmp
 *.log
 

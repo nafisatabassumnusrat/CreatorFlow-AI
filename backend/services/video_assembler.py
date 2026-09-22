@@ -1,5 +1,7 @@
 import asyncio
 import os
+import uuid
+import shutil
 from pathlib import Path
 from typing import List, Optional
 import imageio_ffmpeg
@@ -28,7 +30,6 @@ class VideoAssembler:
             stderr=asyncio.subprocess.PIPE
         )
         _, stderr = await proc.communicate()
-        # Parse Duration: 00:00:05.12
         text = stderr.decode("utf-8", errors="ignore")
         for line in text.splitlines():
             if "Duration:" in line:
@@ -48,7 +49,8 @@ class VideoAssembler:
         include_captions: bool = True
     ) -> Path:
         output_file.parent.mkdir(parents=True, exist_ok=True)
-        temp_dir = output_file.parent / "temp_assembly"
+        unique_id = uuid.uuid4().hex[:8]
+        temp_dir = output_file.parent / f"temp_assembly_{unique_id}"
         temp_dir.mkdir(parents=True, exist_ok=True)
 
         segment_files = []
