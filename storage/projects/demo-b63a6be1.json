@@ -1,0 +1,450 @@
+{
+  "project_id": "demo-b63a6be1",
+  "created_at": "2026-09-22T19:44:31.780574",
+  "updated_at": "2026-09-22T19:44:31.929309",
+  "niche": "AI & Technology",
+  "topic": "Why AI Agents Are Different From Chatbots",
+  "target_audience": "Beginner developers and computer science students",
+  "language": "English",
+  "duration": "3 min",
+  "style": "Cinematic",
+  "voice": "Neutral",
+  "reference_channel": "@Fireship",
+  "brand_info": "Clean modern dark theme, fast-paced technical focus",
+  "current_stage": "thumbnail",
+  "stage_statuses": {
+    "strategy": "COMPLETED",
+    "titles": "COMPLETED",
+    "hook": "COMPLETED",
+    "script": "COMPLETED",
+    "approval_script": "WAITING FOR APPROVAL",
+    "storyboard": "PENDING",
+    "voice": "PENDING",
+    "visuals": "PENDING",
+    "thumbnail": "COMPLETED",
+    "seo": "PENDING",
+    "quality_check": "PENDING",
+    "approval_production": "PENDING",
+    "rendering": "PENDING"
+  },
+  "content_strategy": {
+    "topic": "Why AI Agents Are Different From Chatbots",
+    "niche": "AI & Technology",
+    "audience": "Beginner developers and computer science students",
+    "angles": [
+      {
+        "id": "angle_1",
+        "title": "The Pragmatic Developer's Guide to Why AI Agents Are Different From Chatbots",
+        "description": "Direct, actionable breakdown focused on practical application for Beginner developers and computer science students.",
+        "target_viewer": "Beginner developers and computer science students",
+        "hook_premise": "Stop wasting time on theory; here is what actually works.",
+        "estimated_retention": "High (45-55% completion)"
+      },
+      {
+        "id": "angle_2",
+        "title": "Why Everything You Knew About Why AI Agents Are Different From Chatbots Is Changing",
+        "description": "Provocative deep-dive exploring paradigm shifts, future implications, and unexpected insights.",
+        "target_viewer": "Curious tech enthusiasts and early adopters",
+        "hook_premise": "Most people misunderstand this core concept entirely.",
+        "estimated_retention": "Very High (50-60% completion)"
+      },
+      {
+        "id": "angle_3",
+        "title": "The 2026 Blueprint: Mastering Why AI Agents Are Different From Chatbots",
+        "description": "Comprehensive, step-by-step masterclass with clear mental models and benchmark examples.",
+        "target_viewer": "Beginner developers and computer science students",
+        "hook_premise": "A complete walkthrough from foundational concept to production deployment.",
+        "estimated_retention": "High (40-50% completion)"
+      }
+    ],
+    "selected_angle": {
+      "id": "angle_2",
+      "title": "Why Everything You Knew About Why AI Agents Are Different From Chatbots Is Changing",
+      "description": "Provocative deep-dive exploring paradigm shifts, future implications, and unexpected insights.",
+      "target_viewer": "Curious tech enthusiasts and early adopters",
+      "hook_premise": "Most people misunderstand this core concept entirely.",
+      "estimated_retention": "Very High (50-60% completion)"
+    },
+    "core_promise": "Deliver an authoritative, highly engaging understanding of Why AI Agents Are Different From Chatbots tailored for Beginner developers and computer science students.",
+    "unique_selling_point": "Combines fast-paced visual storytelling with real-world technical precision.",
+    "suggested_video_structure": [
+      "High-impact problem hook (0:00 - 0:15)",
+      "The core paradigm shift (0:15 - 1:00)",
+      "Detailed breakdown & practical examples (1:00 - 3:30)",
+      "Key technical takeaways (3:30 - 4:30)",
+      "Actionable conclusion & CTA (4:30 - End)"
+    ],
+    "viewer_intent": "Learn actionable insights without corporate fluff",
+    "educational_value": "10/10 actionable depth"
+  },
+  "selected_angle": {
+    "id": "angle_2",
+    "title": "Why Everything You Knew About Why AI Agents Are Different From Chatbots Is Changing",
+    "description": "Provocative deep-dive exploring paradigm shifts, future implications, and unexpected insights.",
+    "target_viewer": "Curious tech enthusiasts and early adopters",
+    "hook_premise": "Most people misunderstand this core concept entirely.",
+    "estimated_retention": "Very High (50-60% completion)"
+  },
+  "title_options": [
+    {
+      "id": "t1",
+      "title": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)",
+      "clarity_score": 9,
+      "curiosity_score": 7,
+      "relevance_score": 10,
+      "search_intent_score": 9,
+      "click_potential_score": 8,
+      "length_chars": 63,
+      "rationale": "Strong search intent with high clarity and current-year relevance."
+    },
+    {
+      "id": "t2",
+      "title": "Why Developers Are Rethinking Why AI Agents Are Different From Chatbots",
+      "clarity_score": 8,
+      "curiosity_score": 9,
+      "relevance_score": 9,
+      "search_intent_score": 8,
+      "click_potential_score": 9,
+      "length_chars": 71,
+      "rationale": "High curiosity gap targeting developer mindset."
+    },
+    {
+      "id": "t3",
+      "title": "Stop Using Old Tools: Why AI Agents Are Different From Chatbots Changes Everything",
+      "clarity_score": 8,
+      "curiosity_score": 9,
+      "relevance_score": 8,
+      "search_intent_score": 7,
+      "click_potential_score": 9,
+      "length_chars": 82,
+      "rationale": "Urgency-driven emotional hook."
+    },
+    {
+      "id": "t4",
+      "title": "The Truth About Why AI Agents Are Different From Chatbots in 2026",
+      "clarity_score": 7,
+      "curiosity_score": 9,
+      "relevance_score": 8,
+      "search_intent_score": 8,
+      "click_potential_score": 8,
+      "length_chars": 65,
+      "rationale": "Classic curiosity framing with broad appeal."
+    },
+    {
+      "id": "t5",
+      "title": "Why AI Agents Are Different From Chatbots Explained in 5 Minutes",
+      "clarity_score": 10,
+      "curiosity_score": 7,
+      "relevance_score": 9,
+      "search_intent_score": 9,
+      "click_potential_score": 8,
+      "length_chars": 64,
+      "rationale": "Instant value promise with clear time commitment."
+    }
+  ],
+  "selected_title": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)",
+  "hook": {
+    "hook_text": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software.",
+    "hook_duration_sec": 12,
+    "visual_direction": "Fast montage of cutting-edge tech interfaces zooming into terminal code",
+    "problem_statement": "Outdated approaches drain hours of developer productivity",
+    "value_promise": "A definitive breakdown of the exact tools and workflows you need today"
+  },
+  "script": {
+    "selected_title": "Why AI Agents Are Different From Chatbots (The 2026 Full Guide)",
+    "hook": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software.",
+    "target_duration_sec": 180,
+    "estimated_word_count": 188,
+    "scenes": [
+      {
+        "scene_number": 1,
+        "section": "HOOK",
+        "duration_sec": 12,
+        "narration": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software.",
+        "visual_direction": "Fast-paced montage of terminal windows, neural architecture diagrams, and autonomous execution pipelines.",
+        "on_screen_text": "WHY AI AGENTS ARE DIFFERENT FROM CHATBOTS: THE SHIFT",
+        "transition": "Glitch zoom cut"
+      },
+      {
+        "scene_number": 2,
+        "section": "INTRO",
+        "duration_sec": 18,
+        "narration": "If you've been watching the tech landscape over the past few months, one thing is unmistakable: the tools we rely on are fundamentally transforming.",
+        "visual_direction": "Cinematic camera slowly pushes into a high-tech studio workstation displaying live telemetry data.",
+        "on_screen_text": "PARADIGM SHIFT",
+        "transition": "Smooth slide left"
+      },
+      {
+        "scene_number": 3,
+        "section": "PROBLEM",
+        "duration_sec": 24,
+        "narration": "For years, developers were stuck writing repetitive boilerplate and manually stitching disparate services together. The promise of automation always seemed slightly out of reach.",
+        "visual_direction": "Split-screen comparison showing frustrated manual coding vs. streamlined autonomous execution.",
+        "on_screen_text": "THE OLD WORKFLOW IS BROKEN",
+        "transition": "Crossfade dissolve"
+      },
+      {
+        "scene_number": 4,
+        "section": "MAIN_CONTENT",
+        "duration_sec": 36,
+        "narration": "That brings us to Why AI Agents Are Different From Chatbots. Instead of treating systems as passive prompt-and-response utilities, we are now building proactive, multi-step agent pipelines that reason, validate, and execute autonomously.",
+        "visual_direction": "Dynamic 3D animated diagram of an agent state machine branching into execution paths and self-correcting.",
+        "on_screen_text": "AUTONOMOUS ARCHITECTURE",
+        "transition": "Wipe right"
+      },
+      {
+        "scene_number": 5,
+        "section": "EXAMPLES",
+        "duration_sec": 32,
+        "narration": "Let's look at real-world benchmarks. When you implement a structured state machine with verification gates, error recovery rates improve dramatically compared to single-shot generative models.",
+        "visual_direction": "Infographic animation displaying benchmark performance curves and real-time execution telemetry.",
+        "on_screen_text": "BENCHMARKS & RESULTS",
+        "transition": "Zoom blur"
+      },
+      {
+        "scene_number": 6,
+        "section": "KEY_TAKEAWAYS",
+        "duration_sec": 24,
+        "narration": "The key insight here is simple: autonomy requires structured state, continuous feedback loops, and human-in-the-loop oversight before irreversible actions.",
+        "visual_direction": "Three sleek floating glass cards summarizing: State, Feedback, and Verification.",
+        "on_screen_text": "3 GOLDEN PRINCIPLES",
+        "transition": "Soft cut"
+      },
+      {
+        "scene_number": 7,
+        "section": "CTA",
+        "duration_sec": 14,
+        "narration": "If you found this breakdown valuable, drop a comment with your favorite workflow tool, hit subscribe for more autonomous engineering deep-dives, and check the description for all project resources.",
+        "visual_direction": "End card with subscribe button graphic, related video thumbnail placeholder, and community social handles.",
+        "on_screen_text": "SUBSCRIBE & JOIN COMMUNITY",
+        "transition": "Fade to dark"
+      }
+    ],
+    "full_narration": "Most people think Why AI Agents Are Different From Chatbots is just another passing tech trend. But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software. If you've been watching the tech landscape over the past few months, one thing is unmistakable: the tools we rely on are fundamentally transforming. For years, developers were stuck writing repetitive boilerplate and manually stitching disparate services together. The promise of automation always seemed slightly out of reach. That brings us to Why AI Agents Are Different From Chatbots. Instead of treating systems as passive prompt-and-response utilities, we are now building proactive, multi-step agent pipelines that reason, validate, and execute autonomously. Let's look at real-world benchmarks. When you implement a structured state machine with verification gates, error recovery rates improve dramatically compared to single-shot generative models. The key insight here is simple: autonomy requires structured state, continuous feedback loops, and human-in-the-loop oversight before irreversible actions. If you found this breakdown valuable, drop a comment with your favorite workflow tool, hit subscribe for more autonomous engineering deep-dives, and check the description for all project resources.",
+    "call_to_action": "Subscribe and explore the code repo linked in the description."
+  },
+  "storyboard": [],
+  "thumbnail_concepts": [
+    {
+      "id": "thumb_1",
+      "title_text": "STOP USING CHATBOTS",
+      "visual_concept": "Split composition with crossed-out text box on left and glowing autonomous neural agent on right",
+      "composition": "Rule of thirds, high contrast bold text on left, focal subject on right",
+      "subject": "Cybernetic agent interface executing tasks in terminal",
+      "color_direction": "Electric yellow (#FACC15) text on obsidian black and cyan glow",
+      "emotion": "Urgency and intense curiosity",
+      "image_prompt": "High-impact YouTube thumbnail, electric yellow bold typography 'STOP USING CHATBOTS', 3D cybernetic glowing agent interface, dramatic rim lighting",
+      "clarity_score": 10,
+      "curiosity_score": 9,
+      "relevance_score": 10,
+      "mobile_readability_score": 10,
+      "visual_hierarchy_score": 9,
+      "overall_score": 9.6,
+      "is_selected": false,
+      "image_url": "E:\\youtube\\storage\\media\\demo-b63a6be1\\thumbnail.jpg"
+    },
+    {
+      "id": "thumb_2",
+      "title_text": "THE 2026 AI BLUEPRINT",
+      "visual_concept": "Glowing architectural schematic of modern AI agent workflows",
+      "composition": "Centred heroic diagram with floating code snippets",
+      "subject": "Minimalist tech schematic with glowing nodes",
+      "color_direction": "Deep navy, neon violet, and crisp white typography",
+      "emotion": "Mastery and cutting-edge sophistication",
+      "image_prompt": "Modern YouTube thumbnail, ultra clean blueprint diagram of AI agent architecture, neon violet glow, bold white typography 'THE 2026 BLUEPRINT'",
+      "clarity_score": 8,
+      "curiosity_score": 8,
+      "relevance_score": 9,
+      "mobile_readability_score": 8,
+      "visual_hierarchy_score": 8,
+      "overall_score": 8.2,
+      "is_selected": false,
+      "image_url": "E:\\youtube\\storage\\media\\demo-b63a6be1\\thumbnails\\thumbnail_thumb_2.jpg"
+    },
+    {
+      "id": "thumb_3",
+      "title_text": "DON'T GET LEFT BEHIND",
+      "visual_concept": "Dramatic expression with floating futuristic HUD metrics showing 10x speed multiplier",
+      "composition": "Extreme close-up on left, large floating 10X stat badge on right",
+      "subject": "Futuristic developer workstation with glowing metrics",
+      "color_direction": "Vibrant crimson (#EF4444) text with dark slate background",
+      "emotion": "FOMO and competitive advantage",
+      "image_prompt": "YouTube thumbnail, dramatic red bold text 'DON'T GET LEFT BEHIND', floating holographic 10X speed badge, hyper-realistic workstation",
+      "clarity_score": 9,
+      "curiosity_score": 9,
+      "relevance_score": 8,
+      "mobile_readability_score": 9,
+      "visual_hierarchy_score": 8,
+      "overall_score": 8.6,
+      "is_selected": false,
+      "image_url": "E:\\youtube\\storage\\media\\demo-b63a6be1\\thumbnails\\thumbnail_thumb_3.jpg"
+    },
+    {
+      "id": "thumb_4",
+      "title_text": "5 AGENTS YOU NEED",
+      "visual_concept": "Five distinctive stylized glowing badges arrayed in arc",
+      "composition": "Horizontal row of 5 icons with huge top-centered text",
+      "subject": "5 distinct robot agent glyphs with neon outlines",
+      "color_direction": "Emerald green and pure white on dark indigo",
+      "emotion": "Direct utility and curation",
+      "image_prompt": "YouTube thumbnail, bold emerald green title '5 AGENTS YOU NEED', 5 futuristic stylized agent badges, dark gradient background",
+      "clarity_score": 9,
+      "curiosity_score": 7,
+      "relevance_score": 9,
+      "mobile_readability_score": 9,
+      "visual_hierarchy_score": 8,
+      "overall_score": 8.4,
+      "is_selected": false,
+      "image_url": "E:\\youtube\\storage\\media\\demo-b63a6be1\\thumbnails\\thumbnail_thumb_4.jpg"
+    },
+    {
+      "id": "thumb_5",
+      "title_text": "I TESTED THEM ALL",
+      "visual_concept": "Comparison matrix with checkmarks and red X marks across agent architectures",
+      "composition": "Before/After split screen with highlighted winner badge",
+      "subject": "Technical comparison dashboard with glowing gold highlight",
+      "color_direction": "Amber gold (#F59E0B) and deep titanium grey",
+      "emotion": "Authentic testing authority",
+      "image_prompt": "YouTube thumbnail, amber gold typography 'I TESTED THEM ALL', comparison matrix with checkmarks, professional studio lighting",
+      "clarity_score": 8,
+      "curiosity_score": 9,
+      "relevance_score": 8,
+      "mobile_readability_score": 8,
+      "visual_hierarchy_score": 8,
+      "overall_score": 8.2,
+      "is_selected": false,
+      "image_url": "E:\\youtube\\storage\\media\\demo-b63a6be1\\thumbnails\\thumbnail_thumb_5.jpg"
+    },
+    {
+      "id": "thumb_6",
+      "title_text": "ZERO TO AGENT IN 5 MIN",
+      "visual_concept": "High-speed developer workflow with floating stopwatch and instant deployment badge",
+      "composition": "Bold dynamic diagonal typography with speed trails",
+      "subject": "Fast-paced interactive developer dashboard with glowing success prompt",
+      "color_direction": "Vibrant cyan (#06B6D4) and electric purple glow",
+      "emotion": "Simplicity and immediate mastery",
+      "image_prompt": "YouTube thumbnail, vibrant cyan typography 'ZERO TO AGENT IN 5 MIN', futuristic terminal with glowing success badge, volumetric studio lighting",
+      "clarity_score": 10,
+      "curiosity_score": 8,
+      "relevance_score": 9,
+      "mobile_readability_score": 10,
+      "visual_hierarchy_score": 9,
+      "overall_score": 9.2,
+      "is_selected": true,
+      "image_url": "E:\\youtube\\storage\\media\\demo-b63a6be1\\thumbnail.jpg"
+    }
+  ],
+  "selected_thumbnail": {
+    "id": "thumb_6",
+    "title_text": "ZERO TO AGENT IN 5 MIN",
+    "visual_concept": "High-speed developer workflow with floating stopwatch and instant deployment badge",
+    "composition": "Bold dynamic diagonal typography with speed trails",
+    "subject": "Fast-paced interactive developer dashboard with glowing success prompt",
+    "color_direction": "Vibrant cyan (#06B6D4) and electric purple glow",
+    "emotion": "Simplicity and immediate mastery",
+    "image_prompt": "YouTube thumbnail, vibrant cyan typography 'ZERO TO AGENT IN 5 MIN', futuristic terminal with glowing success badge, volumetric studio lighting",
+    "clarity_score": 10,
+    "curiosity_score": 8,
+    "relevance_score": 9,
+    "mobile_readability_score": 10,
+    "visual_hierarchy_score": 9,
+    "overall_score": 9.2,
+    "is_selected": true,
+    "image_url": "E:\\youtube\\storage\\media\\demo-b63a6be1\\thumbnail.jpg"
+  },
+  "seo": null,
+  "quality_checks": null,
+  "validation_retry_count": 0,
+  "rendered_video_url": null,
+  "final_package": null,
+  "script_approved": false,
+  "production_approved": false,
+  "waiting_for_approval_type": "script",
+  "activity_logs": [
+    {
+      "timestamp": "19:44:31",
+      "stage": "System",
+      "action": "Demo project initialized with preconfigured creator parameters.",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "19:44:31",
+      "stage": "Content Strategy",
+      "action": "Analyzing topic, niche, and target viewer intent...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "19:44:31",
+      "stage": "Content Strategy",
+      "action": "Selected content angle: 'Why Everything You Knew About Why AI Agents Are Different From Chatbots Is Changing'",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "19:44:31",
+      "stage": "Title Agent",
+      "action": "Generating 5 YouTube title candidates...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "19:44:31",
+      "stage": "Title Agent",
+      "action": "Selected title: 'Why AI Agents Are Different From Chatbots (The 2026 Full Guide)'",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "19:44:31",
+      "stage": "Hook Agent",
+      "action": "Generating 5-15s opening retention hook...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "19:44:31",
+      "stage": "Hook Agent",
+      "action": "Generated opening hook with problem and value promise.",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "19:44:31",
+      "stage": "Script Agent",
+      "action": "Composing full structured script matching target duration...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "19:44:31",
+      "stage": "Script Agent",
+      "action": "Script complete (7 scenes). Pausing for Human Approval Gate: Review Script.",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "19:44:31",
+      "stage": "Thumbnail Agent",
+      "action": "Brainstorming 5 high-converting YouTube thumbnail concepts...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "19:44:31",
+      "stage": "Thumbnail Agent",
+      "action": "Generated 6 thumbnail options. Active selection: 'STOP USING CHATBOTS' (Score: 9.6/10).",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "19:44:31",
+      "stage": "Thumbnail Agent",
+      "action": "Creator switched active thumbnail to 'ZERO TO AGENT IN 5 MIN'",
+      "details": null,
+      "status": "info"
+    }
+  ],
+  "error_message": null
+}

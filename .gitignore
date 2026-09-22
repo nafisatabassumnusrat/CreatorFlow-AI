@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# Environment Variables
+.env
+.env.local
+
+# Temporary & Cache files
+storage/media/temp_assembly/
+*.tmp
+*.log
+
+# OS generated
+.DS_Store
+Thumbs.db
