@@ -1,8 +1,17 @@
 {
   "version": 2,
+  "functions": {
+    "api/index.py": {
+      "maxDuration": 60,
+      "memory": 1024
+    }
+  },
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index.py" },
     { "source": "/media/(.*)", "destination": "/api/index.py" },
+    { "source": "/frontend/assets/(.*)", "destination": "/frontend/assets/$1" },
+    { "source": "/frontend/css/(.*)", "destination": "/frontend/css/$1" },
+    { "source": "/frontend/js/(.*)", "destination": "/frontend/js/$1" },
     { "source": "/static/(.*)", "destination": "/frontend/$1" },
     { "source": "/css/(.*)", "destination": "/frontend/css/$1" },
     { "source": "/js/(.*)", "destination": "/frontend/js/$1" },

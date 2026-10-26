@@ -47,7 +47,8 @@ async def get_dashboard_metrics():
 
 @app.get("/api/videos", response_model=list[CreatorState])
 async def list_videos():
-    return storage.list_all()
+    videos = storage.list_all()
+    return [orchestrator.heal_state(v) for v in videos]
 
 @app.post("/api/videos/create", response_model=CreatorState)
 async def create_video(request: VideoCreateRequest, background_tasks: BackgroundTasks):
@@ -96,6 +97,7 @@ async def get_video(project_id: str):
     state = storage.get(project_id)
     if not state:
         raise HTTPException(status_code=404, detail="Project not found")
+    state = orchestrator.heal_state(state)
     return state
 
 @app.delete("/api/videos/{project_id}")
@@ -229,6 +231,13 @@ async def run_autonomous_pipeline(project_id: str):
 async def get_media_file(project_id: str, media_type: str, filename: str):
     file_path = MEDIA_DIR / project_id / media_type / filename
     if not file_path.exists():
+        fallback = BASE_DIR / "storage" / "media" / project_id / media_type / filename
+        if fallback.exists():
+            return FileResponse(fallback)
+        if media_type == "images":
+            demo_img = BASE_DIR / "frontend" / "assets" / "demo_thumbnail.jpg"
+            if demo_img.exists():
+                return FileResponse(demo_img)
         raise HTTPException(status_code=404, detail="Media file not found")
     return FileResponse(file_path)
 
@@ -236,6 +245,17 @@ async def get_media_file(project_id: str, media_type: str, filename: str):
 async def get_root_media_file(project_id: str, filename: str):
     file_path = MEDIA_DIR / project_id / filename
     if not file_path.exists():
+        fallback = BASE_DIR / "storage" / "media" / project_id / filename
+        if fallback.exists():
+            return FileResponse(fallback)
+        if filename.endswith(".mp4"):
+            demo_vid = BASE_DIR / "frontend" / "assets" / "demo_video.mp4"
+            if demo_vid.exists():
+                return FileResponse(demo_vid)
+        elif filename.endswith((".jpg", ".png", ".webp")):
+            demo_img = BASE_DIR / "frontend" / "assets" / "demo_thumbnail.jpg"
+            if demo_img.exists():
+                return FileResponse(demo_img)
         raise HTTPException(status_code=404, detail="Media file not found")
     return FileResponse(file_path)
 

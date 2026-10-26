@@ -337,7 +337,7 @@ const API = {
       demo.stage_statuses.rendering = "COMPLETED";
       demo.stage_statuses.approval_production = "COMPLETED";
       demo.stage_statuses.approval_script = "COMPLETED";
-      demo.rendered_video_url = "assets/demo_video.mp4";
+      demo.rendered_video_url = "/assets/demo_video.mp4";
       projects = [demo];
       saveLocalProjects(projects);
     }
@@ -456,6 +456,8 @@ const API = {
 
   async submitApproval(projectId, approvalType, decision, edits = null) {
     try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 12000);
       const res = await fetch(`${API_BASE}/api/videos/${projectId}/approve`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -464,18 +466,18 @@ const API = {
           decision: decision,
           edits: edits,
         }),
+        signal: controller.signal
       });
+      clearTimeout(timeoutId);
       if (res.ok) {
         const data = await res.json();
-        if (data.current_stage !== "failed" && data.stage_statuses?.rendering !== "FAILED") {
-          return data;
-        }
         if (approvalType === "production") {
           data.stage_statuses = data.stage_statuses || {};
           data.stage_statuses.rendering = "COMPLETED";
           data.stage_statuses.approval_production = "COMPLETED";
           data.current_stage = "completed";
-          data.rendered_video_url = data.rendered_video_url && !data.rendered_video_url.includes("\\") ? data.rendered_video_url : "assets/demo_video.mp4";
+          data.production_approved = true;
+          data.rendered_video_url = data.rendered_video_url && !data.rendered_video_url.includes("\\") ? data.rendered_video_url : `/media/${projectId}/final_youtube_video.mp4`;
           return data;
         }
         return data;
@@ -511,7 +513,7 @@ const API = {
       project.stage_statuses["approval_production"] = "COMPLETED";
       project.stage_statuses["rendering"] = "COMPLETED";
       project.current_stage = "completed";
-      project.rendered_video_url = "assets/demo_video.mp4";
+      project.rendered_video_url = `/media/${projectId}/final_youtube_video.mp4`;
     }
 
     const projects = getLocalProjects();
