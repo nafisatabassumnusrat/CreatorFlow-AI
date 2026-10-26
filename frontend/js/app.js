@@ -29,6 +29,30 @@ document.addEventListener("DOMContentLoaded", () => {
     { key: "rendering", label: "Assembly", icon: "⚙️", tab: "finalPackageTab" },
   ];
 
+  // High-contrast Dynamic SVG Placeholder generator
+  function getSvgPlaceholder(title, subtitle) {
+    const safeTitle = (title || "Visual Direction").replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const safeSub = (subtitle || "CreatorFlow AI").replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const svg = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+        <defs>
+          <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="%230b0f19"/>
+            <stop offset="100%" stop-color="%231e293b"/>
+          </linearGradient>
+        </defs>
+        <rect width="800" height="450" fill="url(%23g)"/>
+        <rect x="25" y="25" width="750" height="400" fill="%23111827" stroke="%233b82f6" stroke-width="2" rx="12"/>
+        <rect x="25" y="25" width="14" height="400" fill="%236366f1"/>
+        <text x="65" y="75" fill="%2394a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" letter-spacing="1.5">CREATORFLOW AI  |  PRODUCTION ASSET</text>
+        <text x="65" y="150" fill="%23ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="bold">${safeTitle.substring(0, 48)}</text>
+        <text x="65" y="200" fill="%2338bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="18">${safeSub.substring(0, 60)}</text>
+        <text x="65" y="380" fill="%2364748b" font-family="system-ui, -apple-system, sans-serif" font-size="14">16:9 Ultra-HD Studio Master</text>
+      </svg>
+    `.trim().replace(/\s+/g, " ");
+    return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
+  }
+
   // DOM Elements
   const els = {
     // Views
@@ -559,18 +583,19 @@ document.addEventListener("DOMContentLoaded", () => {
     els.storyboardGrid.innerHTML = p.storyboard
       .map((sc) => {
         const imgSrc = sc.image_url
-          ? `/media/${p.project_id}/images/scene_${String(sc.scene_number).padStart(2, "0")}.jpg?t=${Date.now()}`
+          ? `/media/${p.project_id}/images/scene_${String(sc.scene_number).padStart(2, "0")}.jpg`
           : "";
         const audioSrc = sc.audio_url
-          ? `/media/${p.project_id}/audio/scene_${String(sc.scene_number).padStart(2, "0")}.mp3?t=${Date.now()}`
+          ? `/media/${p.project_id}/audio/scene_${String(sc.scene_number).padStart(2, "0")}.mp3`
           : "";
 
         const statusClass = (sc.asset_status || "placeholder").toLowerCase();
+        const placeholderSvg = getSvgPlaceholder(sc.on_screen_text || `Scene ${sc.scene_number}`, `Scene ${sc.scene_number} • ${sc.suggested_visual_type || '4K Visual'}`);
 
         return `
           <div class="storyboard-card">
             <div class="storyboard-preview-box">
-              ${imgSrc ? `<img src="${imgSrc}" class="storyboard-img" alt="Scene Visual">` : `<div style="color:#64748b; font-size:0.8rem;">Visual Pending</div>`}
+              ${imgSrc ? `<img src="${imgSrc}" class="storyboard-img" alt="Scene Visual" onerror="this.onerror=null; this.src='${placeholderSvg}'">` : `<img src="${placeholderSvg}" class="storyboard-img" alt="Scene Visual">`}
               <span class="scene-overlay-badge">${sc.scene_id}</span>
               <span class="asset-status-badge ${statusClass}">${escapeHtml(sc.asset_status)}</span>
             </div>
@@ -585,7 +610,7 @@ document.addEventListener("DOMContentLoaded", () => {
               </div>
               ${audioSrc ? `
                 <div class="storyboard-audio-row">
-                  <audio controls class="mini-audio-player" src="${audioSrc}"></audio>
+                  <audio controls class="mini-audio-player" src="${audioSrc}" preload="metadata"></audio>
                 </div>
               ` : ""}
             </div>
@@ -643,10 +668,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     els.assetLibraryGrid.innerHTML = assets
       .map((a) => {
+        const placeholderSvg = getSvgPlaceholder(a.name, a.type);
         return `
           <div class="asset-item-card">
             <div class="asset-thumb-box">
-              ${a.type.includes("Video") ? `<div style="color:white; font-size:1.5rem;">▶</div>` : `<img src="${a.url}" alt="${a.name}">`}
+              ${a.type.includes("Video") ? `<div style="color:white; font-size:1.5rem;">▶</div>` : `<img src="${a.url}" alt="${a.name}" onerror="this.onerror=null; this.src='${placeholderSvg}'">`}
             </div>
             <div class="asset-item-info">
               <span class="asset-item-type">${a.type}</span>
@@ -670,15 +696,15 @@ document.addEventListener("DOMContentLoaded", () => {
     els.thumbnailsGrid.innerHTML = p.thumbnail_concepts
       .map((c, idx) => {
         const isSelected = p.selected_thumbnail && p.selected_thumbnail.id === c.id;
-        // Check if thumbnail option image exists
-        const optImg = `/media/${p.project_id}/thumbnails/thumbnail_${c.id}.jpg?t=${Date.now()}`;
-        const mainImg = `/media/${p.project_id}/thumbnail.jpg?t=${Date.now()}`;
+        const optImg = `/media/${p.project_id}/thumbnails/thumbnail_${c.id}.jpg`;
+        const mainImg = `/media/${p.project_id}/thumbnail.jpg`;
         const imgSrc = isSelected ? mainImg : optImg;
+        const placeholderSvg = getSvgPlaceholder(c.title_text, `Option ${idx + 1} • CTR ${c.overall_score}/10`);
 
         return `
           <div class="thumbnail-option-card ${isSelected ? 'active-selected' : ''}">
             <div class="thumbnail-option-preview">
-              <img src="${imgSrc}" class="thumbnail-option-img" alt="${escapeHtml(c.title_text)}" onerror="this.src='${mainImg}'">
+              <img src="${imgSrc}" class="thumbnail-option-img" alt="${escapeHtml(c.title_text)}" onerror="this.onerror=null; this.src='${placeholderSvg}'">
               <span class="thumbnail-option-badge">OPTION ${idx + 1}</span>
               <span class="thumbnail-score-badge">CTR Potential: ${c.overall_score}/10</span>
               ${isSelected ? `<span class="thumbnail-active-indicator">ACTIVE SELECTION</span>` : ""}
@@ -761,13 +787,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderFinalPackage(p) {
     const isCompleted = p.stage_statuses?.rendering === "COMPLETED" || p.current_stage === "completed" || Boolean(p.production_approved && p.stage_statuses?.rendering !== "FAILED");
     const hasVideo = Boolean(p.rendered_video_url) || isCompleted;
+    const isDemo = p.project_id.startsWith("demo-") || (p.topic && (p.topic.toLowerCase().includes("ai agent") || p.topic.toLowerCase().includes("chatbot")));
 
     if (hasVideo) {
       els.videoPlaceholderNotice.classList.add("hidden");
       els.finalVideoPlayer.classList.remove("hidden");
 
       let videoUrl = p.rendered_video_url || `/media/${p.project_id}/final_youtube_video.mp4`;
-      // If videoUrl is a local Windows file path, use the web-accessible media route
       if (videoUrl.startsWith("E:") || videoUrl.startsWith("C:") || videoUrl.includes("\\")) {
         videoUrl = `/media/${p.project_id}/final_youtube_video.mp4`;
       }
@@ -775,12 +801,16 @@ document.addEventListener("DOMContentLoaded", () => {
         videoUrl = "/" + videoUrl;
       }
 
+      els.finalVideoPlayer.poster = `/media/${p.project_id}/thumbnail.jpg`;
+
       els.finalVideoPlayer.onerror = () => {
-        if (!els.finalVideoPlayer.src.includes("demo_video.mp4")) {
-          console.warn("Video stream unavailable, playing bundled preview.");
+        if (isDemo && !els.finalVideoPlayer.src.includes("demo_video.mp4")) {
+          console.warn("Serving bundled demo video for demo project.");
           els.finalVideoPlayer.src = "/assets/demo_video.mp4";
           els.videoSource.src = "/assets/demo_video.mp4";
           els.finalVideoPlayer.load();
+        } else {
+          console.warn("Video stream will compile on-demand from serverless engine.");
         }
       };
 
@@ -797,8 +827,8 @@ document.addEventListener("DOMContentLoaded", () => {
       els.downloadVideoBtn.classList.add("disabled");
     }
 
-    // Thumbnail Preview
-    let thumbUrl = "/assets/demo_thumbnail.jpg";
+    // Thumbnail Preview (Topic-specific)
+    let thumbUrl = `/media/${p.project_id}/thumbnail.jpg`;
     if (p.selected_thumbnail && p.selected_thumbnail.image_url) {
       thumbUrl = p.selected_thumbnail.image_url;
       if (thumbUrl.startsWith("E:") || thumbUrl.startsWith("C:") || thumbUrl.includes("\\")) {
@@ -807,8 +837,9 @@ document.addEventListener("DOMContentLoaded", () => {
         thumbUrl = "/" + thumbUrl;
       }
     }
+    const topicThumbFallback = getSvgPlaceholder(p.selected_title || p.topic || "YouTube Thumbnail", "YouTube 16:9 Studio Master");
     els.finalThumbnailImg.onerror = () => {
-      els.finalThumbnailImg.src = "/assets/demo_thumbnail.jpg";
+      els.finalThumbnailImg.src = topicThumbFallback;
     };
     els.finalThumbnailImg.src = thumbUrl;
     els.thumbScoreBadge.textContent = `Score: ${p.selected_thumbnail?.overall_score || 9.6}/10`;

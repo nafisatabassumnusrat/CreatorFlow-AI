@@ -241,3 +241,46 @@ class VideoAssembler:
                 shutil.rmtree(temp_dir, ignore_errors=True)
             except Exception:
                 pass
+
+    async def fast_assemble(
+        self,
+        image_path: Path,
+        audio_path: Optional[Path],
+        output_file: Path,
+        duration: float = 8.0
+    ) -> Path:
+        """Lightweight topic-specific stillimage video assembly completed in sub-second time."""
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+        if audio_path and audio_path.exists():
+            cmd = [
+                self.ffmpeg_bin, "-y",
+                "-loop", "1",
+                "-i", str(image_path),
+                "-i", str(audio_path),
+                "-c:v", "libx264",
+                "-preset", "ultrafast",
+                "-tune", "stillimage",
+                "-c:a", "aac",
+                "-b:a", "128k",
+                "-pix_fmt", "yuv420p",
+                "-shortest",
+                str(output_file)
+            ]
+        else:
+            cmd = [
+                self.ffmpeg_bin, "-y",
+                "-loop", "1",
+                "-i", str(image_path),
+                "-f", "lavfi",
+                "-i", "anullsrc=r=44100:cl=stereo",
+                "-t", str(duration),
+                "-c:v", "libx264",
+                "-preset", "ultrafast",
+                "-tune", "stillimage",
+                "-c:a", "aac",
+                "-b:a", "128k",
+                "-pix_fmt", "yuv420p",
+                str(output_file)
+            ]
+        await asyncio.to_thread(_run_ffmpeg_sync, cmd)
+        return output_file

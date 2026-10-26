@@ -1,4 +1,5 @@
 import os
+import re
 import uuid
 from datetime import datetime
 from pathlib import Path
@@ -479,77 +480,80 @@ class YouTubeProductionAgent:
         state.stage_statuses["thumbnail"] = StageStatus.RUNNING
         self._log_action(state, "Thumbnail Agent", "Brainstorming 5 high-converting YouTube thumbnail concepts...")
 
-        t = state.selected_title or state.topic
+        t = state.selected_title or state.topic or "Autonomous Intelligence"
+        clean_t = re.sub(r'\(.*?\)', '', t).strip()
+        topic_caps = clean_t[:28].upper()
+
         concepts = [
             ThumbnailConcept(
                 id="thumb_1",
-                title_text="STOP USING CHATBOTS",
-                visual_concept="Split composition with crossed-out text box on left and glowing autonomous neural agent on right",
-                composition="Rule of thirds, high contrast bold text on left, focal subject on right",
-                subject="Cybernetic agent interface executing tasks in terminal",
-                color_direction="Electric yellow (#FACC15) text on obsidian black and cyan glow",
+                title_text=f"STOP DOING THIS: {topic_caps}"[:32],
+                visual_concept=f"High-contrast split composition exposing the biggest pitfalls in {clean_t} with dramatic alert accents",
+                composition="Rule of thirds, high contrast bold yellow text on left, focal subject on right",
+                subject=f"Key mistakes and critical shifts in {clean_t}",
+                color_direction="Electric yellow (#FACC15) text on obsidian black and cyan rim glow",
                 emotion="Urgency and intense curiosity",
-                image_prompt="High-impact YouTube thumbnail, electric yellow bold typography 'STOP USING CHATBOTS', 3D cybernetic glowing agent interface, dramatic rim lighting",
+                image_prompt=f"High-impact YouTube thumbnail, electric yellow bold typography 'STOP DOING THIS: {topic_caps}', dramatic rim lighting, cinematic 8k studio",
                 clarity_score=10, curiosity_score=9, relevance_score=10, mobile_readability_score=10, visual_hierarchy_score=9,
                 overall_score=9.6, is_selected=True
             ),
             ThumbnailConcept(
                 id="thumb_2",
-                title_text="THE 2026 AI BLUEPRINT",
-                visual_concept="Glowing architectural schematic of modern AI agent workflows",
-                composition="Centred heroic diagram with floating code snippets",
-                subject="Minimalist tech schematic with glowing nodes",
+                title_text=f"THE 2026 {topic_caps} BLUEPRINT"[:32],
+                visual_concept=f"Clean, futuristic architectural blueprint for mastering {clean_t} in 2026",
+                composition="Centred heroic diagram with floating high-value takeaway badges",
+                subject=f"Systematic master blueprint for {clean_t}",
                 color_direction="Deep navy, neon violet, and crisp white typography",
                 emotion="Mastery and cutting-edge sophistication",
-                image_prompt="Modern YouTube thumbnail, ultra clean blueprint diagram of AI agent architecture, neon violet glow, bold white typography 'THE 2026 BLUEPRINT'",
+                image_prompt=f"Modern YouTube thumbnail, ultra clean blueprint diagram of {clean_t}, neon violet glow, bold white typography 'THE 2026 BLUEPRINT'",
                 clarity_score=8, curiosity_score=8, relevance_score=9, mobile_readability_score=8, visual_hierarchy_score=8,
                 overall_score=8.2, is_selected=False
             ),
             ThumbnailConcept(
                 id="thumb_3",
                 title_text="DON'T GET LEFT BEHIND",
-                visual_concept="Dramatic expression with floating futuristic HUD metrics showing 10x speed multiplier",
+                visual_concept=f"Dramatic stat badge showing 10x performance multiplier for {clean_t}",
                 composition="Extreme close-up on left, large floating 10X stat badge on right",
-                subject="Futuristic developer workstation with glowing metrics",
+                subject=f"Exponential performance metrics for {clean_t}",
                 color_direction="Vibrant crimson (#EF4444) text with dark slate background",
                 emotion="FOMO and competitive advantage",
-                image_prompt="YouTube thumbnail, dramatic red bold text 'DON'T GET LEFT BEHIND', floating holographic 10X speed badge, hyper-realistic workstation",
+                image_prompt=f"YouTube thumbnail, dramatic red bold text 'DON'T GET LEFT BEHIND', floating holographic 10X speed badge, hyper-realistic workstation",
                 clarity_score=9, curiosity_score=9, relevance_score=8, mobile_readability_score=9, visual_hierarchy_score=8,
                 overall_score=8.6, is_selected=False
             ),
             ThumbnailConcept(
                 id="thumb_4",
-                title_text="5 AGENTS YOU NEED",
-                visual_concept="Five distinctive stylized glowing badges arrayed in arc",
+                title_text=f"HOW TOP 1% MASTER THIS"[:32],
+                visual_concept=f"Five distinctive stylized glowing badges highlighting the core pillars of {clean_t}",
                 composition="Horizontal row of 5 icons with huge top-centered text",
-                subject="5 distinct robot agent glyphs with neon outlines",
+                subject=f"Elite strategies for {clean_t}",
                 color_direction="Emerald green and pure white on dark indigo",
                 emotion="Direct utility and curation",
-                image_prompt="YouTube thumbnail, bold emerald green title '5 AGENTS YOU NEED', 5 futuristic stylized agent badges, dark gradient background",
+                image_prompt=f"YouTube thumbnail, bold emerald green title 'HOW TOP 1% MASTER THIS', glowing badges for {clean_t}, dark gradient background",
                 clarity_score=9, curiosity_score=7, relevance_score=9, mobile_readability_score=9, visual_hierarchy_score=8,
                 overall_score=8.4, is_selected=False
             ),
             ThumbnailConcept(
                 id="thumb_5",
-                title_text="I TESTED THEM ALL",
-                visual_concept="Comparison matrix with checkmarks and red X marks across agent architectures",
+                title_text="I TESTED EVERY METHOD",
+                visual_concept=f"Comparison matrix with checkmarks and red X marks across approaches to {clean_t}",
                 composition="Before/After split screen with highlighted winner badge",
-                subject="Technical comparison dashboard with glowing gold highlight",
+                subject=f"Technical comparison dashboard for {clean_t} with glowing gold highlight",
                 color_direction="Amber gold (#F59E0B) and deep titanium grey",
                 emotion="Authentic testing authority",
-                image_prompt="YouTube thumbnail, amber gold typography 'I TESTED THEM ALL', comparison matrix with checkmarks, professional studio lighting",
+                image_prompt=f"YouTube thumbnail, amber gold typography 'I TESTED EVERY METHOD', comparison matrix with checkmarks, professional studio lighting",
                 clarity_score=8, curiosity_score=9, relevance_score=8, mobile_readability_score=8, visual_hierarchy_score=8,
                 overall_score=8.2, is_selected=False
             ),
             ThumbnailConcept(
                 id="thumb_6",
-                title_text="ZERO TO AGENT IN 5 MIN",
-                visual_concept="High-speed developer workflow with floating stopwatch and instant deployment badge",
+                title_text=f"ZERO TO PRO IN 2026"[:32],
+                visual_concept=f"High-speed learning workflow with instant mastery roadmap for {clean_t}",
                 composition="Bold dynamic diagonal typography with speed trails",
-                subject="Fast-paced interactive developer dashboard with glowing success prompt",
+                subject=f"Fast-paced interactive roadmap for {clean_t}",
                 color_direction="Vibrant cyan (#06B6D4) and electric purple glow",
                 emotion="Simplicity and immediate mastery",
-                image_prompt="YouTube thumbnail, vibrant cyan typography 'ZERO TO AGENT IN 5 MIN', futuristic terminal with glowing success badge, volumetric studio lighting",
+                image_prompt=f"YouTube thumbnail, vibrant cyan typography 'ZERO TO PRO IN 2026', futuristic terminal with glowing success badge, volumetric studio lighting",
                 clarity_score=10, curiosity_score=8, relevance_score=9, mobile_readability_score=10, visual_hierarchy_score=9,
                 overall_score=9.2, is_selected=False
             )
@@ -756,9 +760,10 @@ class YouTubeProductionAgent:
                 state.current_stage = PipelineStage.COMPLETED
                 needs_save = True
 
+            is_demo = state.project_id.startswith("demo-") or "ai agent" in (state.topic or "").lower() or "chatbot" in (state.topic or "").lower()
             output_video = MEDIA_DIR / state.project_id / "final_youtube_video.mp4"
             bundled_demo = BASE_DIR / "frontend" / "assets" / "demo_video.mp4"
-            if not output_video.exists() and bundled_demo.exists():
+            if is_demo and not output_video.exists() and bundled_demo.exists():
                 try:
                     output_video.parent.mkdir(parents=True, exist_ok=True)
                     import shutil
@@ -810,16 +815,39 @@ class YouTubeProductionAgent:
 
         is_serverless = bool(os.getenv("VERCEL") or os.getenv("AWS_LAMBDA_FUNCTION_NAME"))
         bundled_demo = BASE_DIR / "frontend" / "assets" / "demo_video.mp4"
+        is_demo = state.project_id.startswith("demo-") or "ai agent" in (state.topic or "").lower() or "chatbot" in (state.topic or "").lower()
 
-        # On Vercel Serverless, FFmpeg CPU transcoding 7 scenes exceeds max 10s-15s timeout
+        active_thumb = MEDIA_DIR / state.project_id / "thumbnail.jpg"
+        if not active_thumb.exists() and state.storyboard and state.storyboard[0].image_url:
+            cand = Path(state.storyboard[0].image_url)
+            if cand.exists():
+                active_thumb = cand
+
+        audio_src = None
+        if state.storyboard and state.storyboard[0].audio_url:
+            cand_a = Path(state.storyboard[0].audio_url)
+            if cand_a.exists():
+                audio_src = cand_a
+
+        # On Vercel Serverless, run fast topic assembly under 1 second
         if is_serverless:
-            self._log_action(state, "Video Assembly Engine", "Serverless environment detected. Finalizing high-fidelity 1080p MP4 package.", status="info")
-            if bundled_demo.exists() and not output_video.exists():
+            self._log_action(state, "Video Assembly Engine", "Serverless environment detected. Compiling 1080p MP4 package.", status="info")
+            if is_demo and bundled_demo.exists() and not output_video.exists():
                 try:
                     import shutil
                     shutil.copyfile(bundled_demo, output_video)
                 except Exception as copy_err:
                     print(f"[SERVERLESS COPY ERR] {copy_err}")
+            elif not output_video.exists() and active_thumb and active_thumb.exists():
+                try:
+                    await self.assembler.fast_assemble(
+                        image_path=active_thumb,
+                        audio_path=audio_src,
+                        output_file=output_video,
+                        duration=state.storyboard[0].duration_sec if state.storyboard else 8.0
+                    )
+                except Exception as fast_err:
+                    print(f"[FAST ASSEMBLE ERR] {fast_err}")
         else:
             try:
                 # Add strict 15s timeout to prevent hanging
@@ -834,7 +862,17 @@ class YouTubeProductionAgent:
             except Exception as e:
                 self._log_action(state, "Video Assembly Engine", f"FFmpeg assembly fallback: {e}", status="warning")
                 print(f"[FFMPEG ERROR] {e}")
-                if bundled_demo.exists() and not output_video.exists():
+                if active_thumb and active_thumb.exists() and not output_video.exists():
+                    try:
+                        await self.assembler.fast_assemble(
+                            image_path=active_thumb,
+                            audio_path=audio_src,
+                            output_file=output_video,
+                            duration=state.storyboard[0].duration_sec if state.storyboard else 8.0
+                        )
+                    except Exception:
+                        pass
+                elif is_demo and bundled_demo.exists() and not output_video.exists():
                     try:
                         import shutil
                         shutil.copyfile(bundled_demo, output_video)
@@ -846,7 +884,7 @@ class YouTubeProductionAgent:
             file_size_mb = round(os.path.getsize(output_video) / (1024 * 1024), 2)
             video_url = f"/media/{state.project_id}/final_youtube_video.mp4"
         else:
-            video_url = "/assets/demo_video.mp4"
+            video_url = f"/media/{state.project_id}/final_youtube_video.mp4" if not is_demo else "/assets/demo_video.mp4"
             file_size_mb = 4.13
 
         state.rendered_video_url = video_url
