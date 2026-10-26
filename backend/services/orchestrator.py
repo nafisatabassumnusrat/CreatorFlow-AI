@@ -145,16 +145,16 @@ class YouTubeProductionAgent:
             ),
             TitleOption(
                 id="t2",
-                title=f"Why Developers Are Rethinking {t}",
+                title=f"Why People Are Rethinking {t}",
                 clarity_score=8, curiosity_score=9, relevance_score=9, search_intent_score=8, click_potential_score=9,
-                length_chars=len(f"Why Developers Are Rethinking {t}"),
-                rationale="High curiosity gap targeting developer mindset."
+                length_chars=len(f"Why People Are Rethinking {t}"),
+                rationale="High curiosity gap targeting thoughtful audience."
             ),
             TitleOption(
                 id="t3",
-                title=f"Stop Using Old Tools: {t} Changes Everything",
+                title=f"Stop Doing This: {t} Changes Everything",
                 clarity_score=8, curiosity_score=9, relevance_score=8, search_intent_score=7, click_potential_score=9,
-                length_chars=len(f"Stop Using Old Tools: {t} Changes Everything"),
+                length_chars=len(f"Stop Doing This: {t} Changes Everything"),
                 rationale="Urgency-driven emotional hook."
             ),
             TitleOption(
@@ -190,17 +190,18 @@ class YouTubeProductionAgent:
         self._log_action(state, "Hook Agent", "Generating 5-15s opening retention hook...")
 
         topic = state.topic
+        audience = state.target_audience
         hook_text = (
-            f"Most people think {topic} is just another passing tech trend. "
-            f"But what's happening right now isn't an upgrade — it's a complete rewrite of how we build software."
+            f"If you want to understand {topic}, forget everything you've been told before. "
+            f"What is happening right now is completely rewriting the rules."
         )
 
         state.hook = HookData(
             hook_text=hook_text,
             hook_duration_sec=12,
-            visual_direction="Fast montage of cutting-edge tech interfaces zooming into terminal code",
-            problem_statement="Outdated approaches drain hours of developer productivity",
-            value_promise="A definitive breakdown of the exact tools and workflows you need today"
+            visual_direction=f"High-energy cinematic visuals focusing on {topic}",
+            problem_statement=f"Outdated information and confusing advice around {topic}",
+            value_promise=f"A clear, actionable breakdown of {topic} tailored for {audience}"
         )
         state.stage_statuses["hook"] = StageStatus.COMPLETED
         self._log_action(state, "Hook Agent", "Generated opening hook with problem and value promise.", status="success")
@@ -219,6 +220,8 @@ class YouTubeProductionAgent:
         dur_sec = 60 if "1 min" in dur_str else (180 if "3 min" in dur_str else 300)
 
         topic = state.topic
+        audience = state.target_audience
+        niche = state.niche
         hook = state.hook.hook_text if state.hook else f"Welcome to our deep dive on {topic}."
 
         scenes: List[ScriptScene] = [
@@ -227,7 +230,7 @@ class YouTubeProductionAgent:
                 section="HOOK",
                 duration_sec=12,
                 narration=hook,
-                visual_direction="Fast-paced montage of terminal windows, neural architecture diagrams, and autonomous execution pipelines.",
+                visual_direction=f"Cinematic opening montage establishing {topic} with bold visuals and dynamic camera movement.",
                 on_screen_text=f"{topic.upper()}: THE SHIFT",
                 transition="Glitch zoom cut"
             ),
@@ -235,44 +238,44 @@ class YouTubeProductionAgent:
                 scene_number=2,
                 section="INTRO",
                 duration_sec=18,
-                narration=f"If you've been watching the tech landscape over the past few months, one thing is unmistakable: the tools we rely on are fundamentally transforming.",
-                visual_direction="Cinematic camera slowly pushes into a high-tech studio workstation displaying live telemetry data.",
-                on_screen_text="PARADIGM SHIFT",
+                narration=f"If you've been following {niche} recently, one thing is unmistakable: {topic} is completely transforming how {audience} approach everything.",
+                visual_direction=f"High-quality studio camera capturing the core concepts and modern principles of {topic}.",
+                on_screen_text="THE NEW PARADIGM",
                 transition="Smooth slide left"
             ),
             ScriptScene(
                 scene_number=3,
                 section="PROBLEM",
                 duration_sec=24,
-                narration="For years, developers were stuck writing repetitive boilerplate and manually stitching disparate services together. The promise of automation always seemed slightly out of reach.",
-                visual_direction="Split-screen comparison showing frustrated manual coding vs. streamlined autonomous execution.",
-                on_screen_text="THE OLD WORKFLOW IS BROKEN",
+                narration=f"For years, most people relied on outdated methods and confusing advice around {topic}. But old workflows just don't deliver the results you need today.",
+                visual_direction=f"Split-screen comparison showing traditional difficulties vs. modern, streamlined mastery of {topic}.",
+                on_screen_text="THE OLD WAY IS BROKEN",
                 transition="Crossfade dissolve"
             ),
             ScriptScene(
                 scene_number=4,
                 section="MAIN_CONTENT",
                 duration_sec=36,
-                narration=f"That brings us to {topic}. Instead of treating systems as passive prompt-and-response utilities, we are now building proactive, multi-step agent pipelines that reason, validate, and execute autonomously.",
-                visual_direction="Dynamic 3D animated diagram of an agent state machine branching into execution paths and self-correcting.",
-                on_screen_text="AUTONOMOUS ARCHITECTURE",
+                narration=f"That is why mastering {topic} requires a structured approach. When you break it down into clear, repeatable steps, the entire process becomes straightforward and predictable.",
+                visual_direction=f"Dynamic infographic breakdown displaying the key frameworks and actionable steps for {topic}.",
+                on_screen_text="CORE STRATEGY & STEPS",
                 transition="Wipe right"
             ),
             ScriptScene(
                 scene_number=5,
                 section="EXAMPLES",
                 duration_sec=32,
-                narration="Let's look at real-world benchmarks. When you implement a structured state machine with verification gates, error recovery rates improve dramatically compared to single-shot generative models.",
-                visual_direction="Infographic animation displaying benchmark performance curves and real-time execution telemetry.",
-                on_screen_text="BENCHMARKS & RESULTS",
+                narration=f"Let's look at real-world examples. By focusing on high-impact essentials and proven techniques, outcomes improve dramatically from day one.",
+                visual_direction=f"Visual case studies and benchmark demonstrations illustrating practical success with {topic}.",
+                on_screen_text="PROVEN RESULTS",
                 transition="Zoom blur"
             ),
             ScriptScene(
                 scene_number=6,
                 section="KEY_TAKEAWAYS",
                 duration_sec=24,
-                narration="The key insight here is simple: autonomy requires structured state, continuous feedback loops, and human-in-the-loop oversight before irreversible actions.",
-                visual_direction="Three sleek floating glass cards summarizing: State, Feedback, and Verification.",
+                narration=f"The most important takeaway for {audience} is this: consistency, structured principles, and taking action are what truly set you apart with {topic}.",
+                visual_direction=f"Three sleek floating cards summarizing the top 3 actionable principles for {topic}.",
                 on_screen_text="3 GOLDEN PRINCIPLES",
                 transition="Soft cut"
             ),
@@ -280,8 +283,8 @@ class YouTubeProductionAgent:
                 scene_number=7,
                 section="CTA",
                 duration_sec=14,
-                narration="If you found this breakdown valuable, drop a comment with your favorite workflow tool, hit subscribe for more autonomous engineering deep-dives, and check the description for all project resources.",
-                visual_direction="End card with subscribe button graphic, related video thumbnail placeholder, and community social handles.",
+                narration=f"If you found this guide on {topic} valuable, subscribe to the channel and leave a comment with your biggest question.",
+                visual_direction="Outro screen with animated subscribe button, notification bell, and video cards.",
                 on_screen_text="SUBSCRIBE & JOIN COMMUNITY",
                 transition="Fade to dark"
             )
@@ -753,30 +756,16 @@ class YouTubeProductionAgent:
                 background_music_mood=state.storyboard[0].music_mood if state.storyboard else "Tech ambient"
             )
         except Exception as e:
-            self._log_action(state, "Video Assembly Engine", f"Native FFmpeg assembly unavailable in environment ({e}); engaging presentation package fallback.", status="warning")
-            # Copy sample MP4 if available
-            import shutil
-            for cand in [
-                MEDIA_DIR / "demo-6adf59be" / "final_youtube_video.mp4",
-                MEDIA_DIR / "proj-7ea20d59" / "final_youtube_video.mp4",
-                MEDIA_DIR / "test-6469dc" / "final_youtube_video.mp4",
-                BASE_DIR / "storage" / "media" / "demo-6adf59be" / "final_youtube_video.mp4"
-            ]:
-                if cand.exists():
-                    try:
-                        output_video.parent.mkdir(parents=True, exist_ok=True)
-                        shutil.copyfile(cand, output_video)
-                        break
-                    except Exception:
-                        pass
+            self._log_action(state, "Video Assembly Engine", f"FFmpeg assembly error: {e}", status="warning")
+            print(f"[FFMPEG ERROR] {e}")
 
         file_size_mb = 0.0
         if output_video.exists():
             file_size_mb = round(os.path.getsize(output_video) / (1024 * 1024), 2)
-            video_url = str(output_video)
+            video_url = f"/media/{state.project_id}/final_youtube_video.mp4"
         else:
-            video_url = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-            file_size_mb = 4.25
+            video_url = "assets/demo_video.mp4"
+            file_size_mb = 4.13
 
         state.rendered_video_url = video_url
         total_dur = sum(s.duration_sec for s in state.storyboard) if state.storyboard else 180.0

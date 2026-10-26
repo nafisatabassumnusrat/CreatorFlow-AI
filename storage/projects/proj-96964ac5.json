@@ -1,0 +1,945 @@
+{
+  "project_id": "proj-96964ac5",
+  "created_at": "2026-10-26T20:07:15.029777",
+  "updated_at": "2026-10-26T20:07:46.206356",
+  "niche": "Educationa",
+  "topic": "Common Mistakes in BCS",
+  "target_audience": "University students and beginner developers",
+  "language": "English",
+  "duration": "5 min",
+  "style": "Educational",
+  "voice": "Neutral",
+  "reference_channel": "",
+  "brand_info": "",
+  "current_stage": "rendering",
+  "stage_statuses": {
+    "strategy": "COMPLETED",
+    "titles": "COMPLETED",
+    "hook": "COMPLETED",
+    "script": "COMPLETED",
+    "approval_script": "COMPLETED",
+    "storyboard": "COMPLETED",
+    "voice": "COMPLETED",
+    "visuals": "COMPLETED",
+    "thumbnail": "COMPLETED",
+    "seo": "COMPLETED",
+    "quality_check": "COMPLETED",
+    "approval_production": "COMPLETED",
+    "rendering": "RUNNING",
+    "image_gen": "COMPLETED",
+    "video_gen": "COMPLETED"
+  },
+  "content_strategy": {
+    "topic": "Common Mistakes in BCS",
+    "niche": "Educationa",
+    "audience": "University students and beginner developers",
+    "angles": [
+      {
+        "id": "angle_1",
+        "title": "The Pragmatic Developer's Guide to Common Mistakes in BCS",
+        "description": "Direct, actionable breakdown focused on practical application for University students and beginner developers.",
+        "target_viewer": "University students and beginner developers",
+        "hook_premise": "Stop wasting time on theory; here is what actually works.",
+        "estimated_retention": "High (45-55% completion)"
+      },
+      {
+        "id": "angle_2",
+        "title": "Why Everything You Knew About Common Mistakes in BCS Is Changing",
+        "description": "Provocative deep-dive exploring paradigm shifts, future implications, and unexpected insights.",
+        "target_viewer": "Curious tech enthusiasts and early adopters",
+        "hook_premise": "Most people misunderstand this core concept entirely.",
+        "estimated_retention": "Very High (50-60% completion)"
+      },
+      {
+        "id": "angle_3",
+        "title": "The 2026 Blueprint: Mastering Common Mistakes in BCS",
+        "description": "Comprehensive, step-by-step masterclass with clear mental models and benchmark examples.",
+        "target_viewer": "University students and beginner developers",
+        "hook_premise": "A complete walkthrough from foundational concept to production deployment.",
+        "estimated_retention": "High (40-50% completion)"
+      }
+    ],
+    "selected_angle": {
+      "id": "angle_2",
+      "title": "Why Everything You Knew About Common Mistakes in BCS Is Changing",
+      "description": "Provocative deep-dive exploring paradigm shifts, future implications, and unexpected insights.",
+      "target_viewer": "Curious tech enthusiasts and early adopters",
+      "hook_premise": "Most people misunderstand this core concept entirely.",
+      "estimated_retention": "Very High (50-60% completion)"
+    },
+    "core_promise": "Deliver an authoritative, highly engaging understanding of Common Mistakes in BCS tailored for University students and beginner developers.",
+    "unique_selling_point": "Combines fast-paced visual storytelling with real-world technical precision.",
+    "suggested_video_structure": [
+      "High-impact problem hook (0:00 - 0:15)",
+      "The core paradigm shift (0:15 - 1:00)",
+      "Detailed breakdown & practical examples (1:00 - 3:30)",
+      "Key technical takeaways (3:30 - 4:30)",
+      "Actionable conclusion & CTA (4:30 - End)"
+    ],
+    "viewer_intent": "Learn actionable insights without corporate fluff",
+    "educational_value": "10/10 actionable depth"
+  },
+  "selected_angle": {
+    "id": "angle_2",
+    "title": "Why Everything You Knew About Common Mistakes in BCS Is Changing",
+    "description": "Provocative deep-dive exploring paradigm shifts, future implications, and unexpected insights.",
+    "target_viewer": "Curious tech enthusiasts and early adopters",
+    "hook_premise": "Most people misunderstand this core concept entirely.",
+    "estimated_retention": "Very High (50-60% completion)"
+  },
+  "title_options": [
+    {
+      "id": "t1",
+      "title": "Common Mistakes in BCS (The 2026 Full Guide)",
+      "clarity_score": 9,
+      "curiosity_score": 7,
+      "relevance_score": 10,
+      "search_intent_score": 9,
+      "click_potential_score": 8,
+      "length_chars": 44,
+      "rationale": "Strong search intent with high clarity and current-year relevance."
+    },
+    {
+      "id": "t2",
+      "title": "Why People Are Rethinking Common Mistakes in BCS",
+      "clarity_score": 8,
+      "curiosity_score": 9,
+      "relevance_score": 9,
+      "search_intent_score": 8,
+      "click_potential_score": 9,
+      "length_chars": 48,
+      "rationale": "High curiosity gap targeting thoughtful audience."
+    },
+    {
+      "id": "t3",
+      "title": "Stop Doing This: Common Mistakes in BCS Changes Everything",
+      "clarity_score": 8,
+      "curiosity_score": 9,
+      "relevance_score": 8,
+      "search_intent_score": 7,
+      "click_potential_score": 9,
+      "length_chars": 58,
+      "rationale": "Urgency-driven emotional hook."
+    },
+    {
+      "id": "t4",
+      "title": "The Truth About Common Mistakes in BCS in 2026",
+      "clarity_score": 7,
+      "curiosity_score": 9,
+      "relevance_score": 8,
+      "search_intent_score": 8,
+      "click_potential_score": 8,
+      "length_chars": 46,
+      "rationale": "Classic curiosity framing with broad appeal."
+    },
+    {
+      "id": "t5",
+      "title": "Common Mistakes in BCS Explained in 5 Minutes",
+      "clarity_score": 10,
+      "curiosity_score": 7,
+      "relevance_score": 9,
+      "search_intent_score": 9,
+      "click_potential_score": 8,
+      "length_chars": 45,
+      "rationale": "Instant value promise with clear time commitment."
+    }
+  ],
+  "selected_title": "Common Mistakes in BCS (The 2026 Full Guide)",
+  "hook": {
+    "hook_text": "If you want to understand Common Mistakes in BCS, forget everything you've been told before. What is happening right now is completely rewriting the rules.",
+    "hook_duration_sec": 12,
+    "visual_direction": "High-energy cinematic visuals focusing on Common Mistakes in BCS",
+    "problem_statement": "Outdated information and confusing advice around Common Mistakes in BCS",
+    "value_promise": "A clear, actionable breakdown of Common Mistakes in BCS tailored for University students and beginner developers"
+  },
+  "script": {
+    "selected_title": "Common Mistakes in BCS (The 2026 Full Guide)",
+    "hook": "If you want to understand Common Mistakes in BCS, forget everything you've been told before. What is happening right now is completely rewriting the rules.",
+    "target_duration_sec": 300,
+    "estimated_word_count": 176,
+    "scenes": [
+      {
+        "scene_number": 1,
+        "section": "HOOK",
+        "duration_sec": 12,
+        "narration": "If you want to understand Common Mistakes in BCS, forget everything you've been told before. What is happening right now is completely rewriting the rules.",
+        "visual_direction": "Cinematic opening montage establishing Common Mistakes in BCS with bold visuals and dynamic camera movement.",
+        "on_screen_text": "COMMON MISTAKES IN BCS: THE SHIFT",
+        "transition": "Glitch zoom cut"
+      },
+      {
+        "scene_number": 2,
+        "section": "INTRO",
+        "duration_sec": 18,
+        "narration": "If you've been following Educationa recently, one thing is unmistakable: Common Mistakes in BCS is completely transforming how University students and beginner developers approach everything.",
+        "visual_direction": "High-quality studio camera capturing the core concepts and modern principles of Common Mistakes in BCS.",
+        "on_screen_text": "THE NEW PARADIGM",
+        "transition": "Smooth slide left"
+      },
+      {
+        "scene_number": 3,
+        "section": "PROBLEM",
+        "duration_sec": 24,
+        "narration": "For years, most people relied on outdated methods and confusing advice around Common Mistakes in BCS. But old workflows just don't deliver the results you need today.",
+        "visual_direction": "Split-screen comparison showing traditional difficulties vs. modern, streamlined mastery of Common Mistakes in BCS.",
+        "on_screen_text": "THE OLD WAY IS BROKEN",
+        "transition": "Crossfade dissolve"
+      },
+      {
+        "scene_number": 4,
+        "section": "MAIN_CONTENT",
+        "duration_sec": 36,
+        "narration": "That is why mastering Common Mistakes in BCS requires a structured approach. When you break it down into clear, repeatable steps, the entire process becomes straightforward and predictable.",
+        "visual_direction": "Dynamic infographic breakdown displaying the key frameworks and actionable steps for Common Mistakes in BCS.",
+        "on_screen_text": "CORE STRATEGY & STEPS",
+        "transition": "Wipe right"
+      },
+      {
+        "scene_number": 5,
+        "section": "EXAMPLES",
+        "duration_sec": 32,
+        "narration": "Let's look at real-world examples. By focusing on high-impact essentials and proven techniques, outcomes improve dramatically from day one.",
+        "visual_direction": "Visual case studies and benchmark demonstrations illustrating practical success with Common Mistakes in BCS.",
+        "on_screen_text": "PROVEN RESULTS",
+        "transition": "Zoom blur"
+      },
+      {
+        "scene_number": 6,
+        "section": "KEY_TAKEAWAYS",
+        "duration_sec": 24,
+        "narration": "The most important takeaway for University students and beginner developers is this: consistency, structured principles, and taking action are what truly set you apart with Common Mistakes in BCS.",
+        "visual_direction": "Three sleek floating cards summarizing the top 3 actionable principles for Common Mistakes in BCS.",
+        "on_screen_text": "3 GOLDEN PRINCIPLES",
+        "transition": "Soft cut"
+      },
+      {
+        "scene_number": 7,
+        "section": "CTA",
+        "duration_sec": 14,
+        "narration": "If you found this guide on Common Mistakes in BCS valuable, subscribe to the channel and leave a comment with your biggest question.",
+        "visual_direction": "Outro screen with animated subscribe button, notification bell, and video cards.",
+        "on_screen_text": "SUBSCRIBE & JOIN COMMUNITY",
+        "transition": "Fade to dark"
+      }
+    ],
+    "full_narration": "If you want to understand Common Mistakes in BCS, forget everything you've been told before. What is happening right now is completely rewriting the rules. If you've been following Educationa recently, one thing is unmistakable: Common Mistakes in BCS is completely transforming how University students and beginner developers approach everything. For years, most people relied on outdated methods and confusing advice around Common Mistakes in BCS. But old workflows just don't deliver the results you need today. That is why mastering Common Mistakes in BCS requires a structured approach. When you break it down into clear, repeatable steps, the entire process becomes straightforward and predictable. Let's look at real-world examples. By focusing on high-impact essentials and proven techniques, outcomes improve dramatically from day one. The most important takeaway for University students and beginner developers is this: consistency, structured principles, and taking action are what truly set you apart with Common Mistakes in BCS. If you found this guide on Common Mistakes in BCS valuable, subscribe to the channel and leave a comment with your biggest question.",
+    "call_to_action": "Subscribe and explore the code repo linked in the description."
+  },
+  "storyboard": [
+    {
+      "scene_id": "SCENE-01",
+      "scene_number": 1,
+      "duration_sec": 12,
+      "narration": "If you want to understand Common Mistakes in BCS, forget everything you've been told before. What is happening right now is completely rewriting the rules.",
+      "visual_description": "Cinematic opening montage establishing Common Mistakes in BCS with bold visuals and dynamic camera movement.",
+      "suggested_visual_type": "AI Video",
+      "image_prompt": "Cinematic 16:9 ultra-HD visual of Cinematic opening montage establishing Common Mistakes in BCS with bold visuals and dynamic camera movement., 8k resolution, futuristic tech aesthetic, volumetric neon studio lighting",
+      "video_prompt": "Cinematic slow camera motion through Cinematic opening montage establishing Common Mistakes in BCS with bold visuals and dynamic camera movement., seamless 60fps dynamic motion",
+      "on_screen_text": "COMMON MISTAKES IN BCS: THE SHIFT",
+      "transition": "Glitch zoom cut",
+      "music_mood": "Modern cinematic technology",
+      "asset_status": "PLACEHOLDER",
+      "image_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\images\\scene_01.jpg",
+      "video_url": null,
+      "audio_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\audio\\scene_01.mp3",
+      "provider_name": "CreatorFlow Visual Engine (Local)"
+    },
+    {
+      "scene_id": "SCENE-02",
+      "scene_number": 2,
+      "duration_sec": 18,
+      "narration": "If you've been following Educationa recently, one thing is unmistakable: Common Mistakes in BCS is completely transforming how University students and beginner developers approach everything.",
+      "visual_description": "High-quality studio camera capturing the core concepts and modern principles of Common Mistakes in BCS.",
+      "suggested_visual_type": "Motion Graphic",
+      "image_prompt": "Cinematic 16:9 ultra-HD visual of High-quality studio camera capturing the core concepts and modern principles of Common Mistakes in BCS., 8k resolution, futuristic tech aesthetic, volumetric neon studio lighting",
+      "video_prompt": "Cinematic slow camera motion through High-quality studio camera capturing the core concepts and modern principles of Common Mistakes in BCS., seamless 60fps dynamic motion",
+      "on_screen_text": "THE NEW PARADIGM",
+      "transition": "Smooth slide left",
+      "music_mood": "Pulsing electronic ambient",
+      "asset_status": "PLACEHOLDER",
+      "image_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\images\\scene_02.jpg",
+      "video_url": null,
+      "audio_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\audio\\scene_02.mp3",
+      "provider_name": "CreatorFlow Visual Engine (Local)"
+    },
+    {
+      "scene_id": "SCENE-03",
+      "scene_number": 3,
+      "duration_sec": 24,
+      "narration": "For years, most people relied on outdated methods and confusing advice around Common Mistakes in BCS. But old workflows just don't deliver the results you need today.",
+      "visual_description": "Split-screen comparison showing traditional difficulties vs. modern, streamlined mastery of Common Mistakes in BCS.",
+      "suggested_visual_type": "AI Image",
+      "image_prompt": "Cinematic 16:9 ultra-HD visual of Split-screen comparison showing traditional difficulties vs. modern, streamlined mastery of Common Mistakes in BCS., 8k resolution, futuristic tech aesthetic, volumetric neon studio lighting",
+      "video_prompt": "Cinematic slow camera motion through Split-screen comparison showing traditional difficulties vs. modern, streamlined mastery of Common Mistakes in BCS., seamless 60fps dynamic motion",
+      "on_screen_text": "THE OLD WAY IS BROKEN",
+      "transition": "Crossfade dissolve",
+      "music_mood": "Intense cyber synthwave",
+      "asset_status": "PLACEHOLDER",
+      "image_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\images\\scene_03.jpg",
+      "video_url": null,
+      "audio_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\audio\\scene_03.mp3",
+      "provider_name": "CreatorFlow Visual Engine (Local)"
+    },
+    {
+      "scene_id": "SCENE-04",
+      "scene_number": 4,
+      "duration_sec": 36,
+      "narration": "That is why mastering Common Mistakes in BCS requires a structured approach. When you break it down into clear, repeatable steps, the entire process becomes straightforward and predictable.",
+      "visual_description": "Dynamic infographic breakdown displaying the key frameworks and actionable steps for Common Mistakes in BCS.",
+      "suggested_visual_type": "Screen Recording",
+      "image_prompt": "Cinematic 16:9 ultra-HD visual of Dynamic infographic breakdown displaying the key frameworks and actionable steps for Common Mistakes in BCS., 8k resolution, futuristic tech aesthetic, volumetric neon studio lighting",
+      "video_prompt": "Cinematic slow camera motion through Dynamic infographic breakdown displaying the key frameworks and actionable steps for Common Mistakes in BCS., seamless 60fps dynamic motion",
+      "on_screen_text": "CORE STRATEGY & STEPS",
+      "transition": "Wipe right",
+      "music_mood": "Deep tech focus beat",
+      "asset_status": "PLACEHOLDER",
+      "image_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\images\\scene_04.jpg",
+      "video_url": null,
+      "audio_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\audio\\scene_04.mp3",
+      "provider_name": "CreatorFlow Visual Engine (Local)"
+    },
+    {
+      "scene_id": "SCENE-05",
+      "scene_number": 5,
+      "duration_sec": 32,
+      "narration": "Let's look at real-world examples. By focusing on high-impact essentials and proven techniques, outcomes improve dramatically from day one.",
+      "visual_description": "Visual case studies and benchmark demonstrations illustrating practical success with Common Mistakes in BCS.",
+      "suggested_visual_type": "AI Video",
+      "image_prompt": "Cinematic 16:9 ultra-HD visual of Visual case studies and benchmark demonstrations illustrating practical success with Common Mistakes in BCS., 8k resolution, futuristic tech aesthetic, volumetric neon studio lighting",
+      "video_prompt": "Cinematic slow camera motion through Visual case studies and benchmark demonstrations illustrating practical success with Common Mistakes in BCS., seamless 60fps dynamic motion",
+      "on_screen_text": "PROVEN RESULTS",
+      "transition": "Zoom blur",
+      "music_mood": "Upbeat educational tech",
+      "asset_status": "PLACEHOLDER",
+      "image_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\images\\scene_05.jpg",
+      "video_url": null,
+      "audio_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\audio\\scene_05.mp3",
+      "provider_name": "CreatorFlow Visual Engine (Local)"
+    },
+    {
+      "scene_id": "SCENE-06",
+      "scene_number": 6,
+      "duration_sec": 24,
+      "narration": "The most important takeaway for University students and beginner developers is this: consistency, structured principles, and taking action are what truly set you apart with Common Mistakes in BCS.",
+      "visual_description": "Three sleek floating cards summarizing the top 3 actionable principles for Common Mistakes in BCS.",
+      "suggested_visual_type": "Motion Graphic",
+      "image_prompt": "Cinematic 16:9 ultra-HD visual of Three sleek floating cards summarizing the top 3 actionable principles for Common Mistakes in BCS., 8k resolution, futuristic tech aesthetic, volumetric neon studio lighting",
+      "video_prompt": "Cinematic slow camera motion through Three sleek floating cards summarizing the top 3 actionable principles for Common Mistakes in BCS., seamless 60fps dynamic motion",
+      "on_screen_text": "3 GOLDEN PRINCIPLES",
+      "transition": "Soft cut",
+      "music_mood": "Reflective ambient electronic",
+      "asset_status": "PLACEHOLDER",
+      "image_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\images\\scene_06.jpg",
+      "video_url": null,
+      "audio_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\audio\\scene_06.mp3",
+      "provider_name": "CreatorFlow Visual Engine (Local)"
+    },
+    {
+      "scene_id": "SCENE-07",
+      "scene_number": 7,
+      "duration_sec": 14,
+      "narration": "If you found this guide on Common Mistakes in BCS valuable, subscribe to the channel and leave a comment with your biggest question.",
+      "visual_description": "Outro screen with animated subscribe button, notification bell, and video cards.",
+      "suggested_visual_type": "Text Animation",
+      "image_prompt": "Cinematic 16:9 ultra-HD visual of Outro screen with animated subscribe button, notification bell, and video cards., 8k resolution, futuristic tech aesthetic, volumetric neon studio lighting",
+      "video_prompt": "Cinematic slow camera motion through Outro screen with animated subscribe button, notification bell, and video cards., seamless 60fps dynamic motion",
+      "on_screen_text": "SUBSCRIBE & JOIN COMMUNITY",
+      "transition": "Fade to dark",
+      "music_mood": "Energetic outro beat",
+      "asset_status": "PLACEHOLDER",
+      "image_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\images\\scene_07.jpg",
+      "video_url": null,
+      "audio_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\audio\\scene_07.mp3",
+      "provider_name": "CreatorFlow Visual Engine (Local)"
+    }
+  ],
+  "thumbnail_concepts": [
+    {
+      "id": "thumb_1",
+      "title_text": "STOP USING CHATBOTS",
+      "visual_concept": "Split composition with crossed-out text box on left and glowing autonomous neural agent on right",
+      "composition": "Rule of thirds, high contrast bold text on left, focal subject on right",
+      "subject": "Cybernetic agent interface executing tasks in terminal",
+      "color_direction": "Electric yellow (#FACC15) text on obsidian black and cyan glow",
+      "emotion": "Urgency and intense curiosity",
+      "image_prompt": "High-impact YouTube thumbnail, electric yellow bold typography 'STOP USING CHATBOTS', 3D cybernetic glowing agent interface, dramatic rim lighting",
+      "clarity_score": 10,
+      "curiosity_score": 9,
+      "relevance_score": 10,
+      "mobile_readability_score": 10,
+      "visual_hierarchy_score": 9,
+      "overall_score": 9.6,
+      "is_selected": true,
+      "image_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\thumbnail.jpg"
+    },
+    {
+      "id": "thumb_2",
+      "title_text": "THE 2026 AI BLUEPRINT",
+      "visual_concept": "Glowing architectural schematic of modern AI agent workflows",
+      "composition": "Centred heroic diagram with floating code snippets",
+      "subject": "Minimalist tech schematic with glowing nodes",
+      "color_direction": "Deep navy, neon violet, and crisp white typography",
+      "emotion": "Mastery and cutting-edge sophistication",
+      "image_prompt": "Modern YouTube thumbnail, ultra clean blueprint diagram of AI agent architecture, neon violet glow, bold white typography 'THE 2026 BLUEPRINT'",
+      "clarity_score": 8,
+      "curiosity_score": 8,
+      "relevance_score": 9,
+      "mobile_readability_score": 8,
+      "visual_hierarchy_score": 8,
+      "overall_score": 8.2,
+      "is_selected": false,
+      "image_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\thumbnails\\thumbnail_thumb_2.jpg"
+    },
+    {
+      "id": "thumb_3",
+      "title_text": "DON'T GET LEFT BEHIND",
+      "visual_concept": "Dramatic expression with floating futuristic HUD metrics showing 10x speed multiplier",
+      "composition": "Extreme close-up on left, large floating 10X stat badge on right",
+      "subject": "Futuristic developer workstation with glowing metrics",
+      "color_direction": "Vibrant crimson (#EF4444) text with dark slate background",
+      "emotion": "FOMO and competitive advantage",
+      "image_prompt": "YouTube thumbnail, dramatic red bold text 'DON'T GET LEFT BEHIND', floating holographic 10X speed badge, hyper-realistic workstation",
+      "clarity_score": 9,
+      "curiosity_score": 9,
+      "relevance_score": 8,
+      "mobile_readability_score": 9,
+      "visual_hierarchy_score": 8,
+      "overall_score": 8.6,
+      "is_selected": false,
+      "image_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\thumbnails\\thumbnail_thumb_3.jpg"
+    },
+    {
+      "id": "thumb_4",
+      "title_text": "5 AGENTS YOU NEED",
+      "visual_concept": "Five distinctive stylized glowing badges arrayed in arc",
+      "composition": "Horizontal row of 5 icons with huge top-centered text",
+      "subject": "5 distinct robot agent glyphs with neon outlines",
+      "color_direction": "Emerald green and pure white on dark indigo",
+      "emotion": "Direct utility and curation",
+      "image_prompt": "YouTube thumbnail, bold emerald green title '5 AGENTS YOU NEED', 5 futuristic stylized agent badges, dark gradient background",
+      "clarity_score": 9,
+      "curiosity_score": 7,
+      "relevance_score": 9,
+      "mobile_readability_score": 9,
+      "visual_hierarchy_score": 8,
+      "overall_score": 8.4,
+      "is_selected": false,
+      "image_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\thumbnails\\thumbnail_thumb_4.jpg"
+    },
+    {
+      "id": "thumb_5",
+      "title_text": "I TESTED THEM ALL",
+      "visual_concept": "Comparison matrix with checkmarks and red X marks across agent architectures",
+      "composition": "Before/After split screen with highlighted winner badge",
+      "subject": "Technical comparison dashboard with glowing gold highlight",
+      "color_direction": "Amber gold (#F59E0B) and deep titanium grey",
+      "emotion": "Authentic testing authority",
+      "image_prompt": "YouTube thumbnail, amber gold typography 'I TESTED THEM ALL', comparison matrix with checkmarks, professional studio lighting",
+      "clarity_score": 8,
+      "curiosity_score": 9,
+      "relevance_score": 8,
+      "mobile_readability_score": 8,
+      "visual_hierarchy_score": 8,
+      "overall_score": 8.2,
+      "is_selected": false,
+      "image_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\thumbnails\\thumbnail_thumb_5.jpg"
+    },
+    {
+      "id": "thumb_6",
+      "title_text": "ZERO TO AGENT IN 5 MIN",
+      "visual_concept": "High-speed developer workflow with floating stopwatch and instant deployment badge",
+      "composition": "Bold dynamic diagonal typography with speed trails",
+      "subject": "Fast-paced interactive developer dashboard with glowing success prompt",
+      "color_direction": "Vibrant cyan (#06B6D4) and electric purple glow",
+      "emotion": "Simplicity and immediate mastery",
+      "image_prompt": "YouTube thumbnail, vibrant cyan typography 'ZERO TO AGENT IN 5 MIN', futuristic terminal with glowing success badge, volumetric studio lighting",
+      "clarity_score": 10,
+      "curiosity_score": 8,
+      "relevance_score": 9,
+      "mobile_readability_score": 10,
+      "visual_hierarchy_score": 9,
+      "overall_score": 9.2,
+      "is_selected": false,
+      "image_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\thumbnails\\thumbnail_thumb_6.jpg"
+    }
+  ],
+  "selected_thumbnail": {
+    "id": "thumb_1",
+    "title_text": "STOP USING CHATBOTS",
+    "visual_concept": "Split composition with crossed-out text box on left and glowing autonomous neural agent on right",
+    "composition": "Rule of thirds, high contrast bold text on left, focal subject on right",
+    "subject": "Cybernetic agent interface executing tasks in terminal",
+    "color_direction": "Electric yellow (#FACC15) text on obsidian black and cyan glow",
+    "emotion": "Urgency and intense curiosity",
+    "image_prompt": "High-impact YouTube thumbnail, electric yellow bold typography 'STOP USING CHATBOTS', 3D cybernetic glowing agent interface, dramatic rim lighting",
+    "clarity_score": 10,
+    "curiosity_score": 9,
+    "relevance_score": 10,
+    "mobile_readability_score": 10,
+    "visual_hierarchy_score": 9,
+    "overall_score": 9.6,
+    "is_selected": true,
+    "image_url": "C:\\Users\\Nafisa Tabassum\\Downloads\\New folder (15)\\CreatorFlow-AI-main\\storage\\media\\proj-96964ac5\\thumbnail.jpg"
+  },
+  "seo": {
+    "title": "Common Mistakes in BCS (The 2026 Full Guide)",
+    "description": "Common Mistakes in BCS (The 2026 Full Guide)\n\nIn this video, we break down Common Mistakes in BCS for University students and beginner developers.\n\n📌 TIMESTAMPS / CHAPTERS:\n00:00 - Common Mistakes In Bcs: The Shift\n00:12 - The New Paradigm\n00:30 - The Old Way Is Broken\n00:54 - Core Strategy & Steps\n01:30 - Proven Results\n02:02 - 3 Golden Principles\n02:26 - Subscribe & Join Community\n\n💡 KEY TAKEAWAYS:\n• Why traditional prompts are being replaced by autonomous agent pipelines.\n• How structured state machines enable resilient self-correction and validation.\n• Real-world benchmarks and developer implementation steps for 2026.\n\n🔗 RESOURCES & LINKS:\n• GitHub Repository: https://github.com/creatorflow/autonomous-agents\n• Full Documentation & Architecture: https://creatorflow.ai/docs\n\n#AIAgents #SoftwareEngineering #Automation #Developers #AI2026",
+    "short_description": "A complete, autonomous breakdown of Common Mistakes in BCS for University students and beginner developers.",
+    "chapters": [
+      {
+        "time": "00:00",
+        "title": "Common Mistakes In Bcs: The Shift"
+      },
+      {
+        "time": "00:12",
+        "title": "The New Paradigm"
+      },
+      {
+        "time": "00:30",
+        "title": "The Old Way Is Broken"
+      },
+      {
+        "time": "00:54",
+        "title": "Core Strategy & Steps"
+      },
+      {
+        "time": "01:30",
+        "title": "Proven Results"
+      },
+      {
+        "time": "02:02",
+        "title": "3 Golden Principles"
+      },
+      {
+        "time": "02:26",
+        "title": "Subscribe & Join Community"
+      }
+    ],
+    "keywords": [
+      "common mistakes in bcs",
+      "ai agents",
+      "autonomous agents",
+      "developer tools 2026",
+      "software architecture",
+      "ai production pipeline",
+      "educationa"
+    ],
+    "tags": [
+      "Common Mistakes in BCS",
+      "AI Agents",
+      "Autonomous Coding",
+      "Software Engineering",
+      "LLM Orchestration",
+      "Developer Productivity",
+      "Tech Tutorial 2026",
+      "CreatorFlow AI"
+    ],
+    "hashtags": [
+      "#AIAgents",
+      "#Coding",
+      "#TechNews",
+      "#SoftwareEngineering",
+      "#AI2026"
+    ],
+    "pinned_comment": "👋 Question of the day: What is your biggest challenge when working with AI agents? Let us know in the comments below!"
+  },
+  "quality_checks": {
+    "passed": true,
+    "checked_at": "20:07:34",
+    "checks": [
+      {
+        "category": "Content",
+        "name": "Topic Relevance & Alignment",
+        "passed": true,
+        "details": "Verified script contains core topic terms: ['common', 'mistakes']",
+        "severity": "info"
+      },
+      {
+        "category": "Content",
+        "name": "Hook Punchiness & Curiosity",
+        "passed": true,
+        "details": "5-15s opening hook creates curiosity and delivers initial value promise.",
+        "severity": "info"
+      },
+      {
+        "category": "Content",
+        "name": "Call-To-Action (CTA) Clarity",
+        "passed": true,
+        "details": "Explicit viewer engagement and follow-up prompt configured.",
+        "severity": "info"
+      },
+      {
+        "category": "Production",
+        "name": "Scene Storyboard Coverage",
+        "passed": true,
+        "details": "7 production scenes generated.",
+        "severity": "info"
+      },
+      {
+        "category": "Production",
+        "name": "Scene Visual Prompt Completeness",
+        "passed": true,
+        "details": "Every scene specifies visual description, prompt, and visual type.",
+        "severity": "info"
+      },
+      {
+        "category": "Production",
+        "name": "Narration Audio Coverage",
+        "passed": true,
+        "details": "All scenes contain synchronized narration script.",
+        "severity": "info"
+      },
+      {
+        "category": "Production",
+        "name": "Duration Pacing Alignment",
+        "passed": false,
+        "details": "Calculated 160s runtime against 300s target.",
+        "severity": "warning"
+      },
+      {
+        "category": "Package",
+        "name": "YouTube Title Selected",
+        "passed": true,
+        "details": "Primary title: 'Common Mistakes in BCS (The 2026 Full Guide)'",
+        "severity": "info"
+      },
+      {
+        "category": "Package",
+        "name": "SEO & Metadata Completeness",
+        "passed": true,
+        "details": "Chapters, tags, hashtags, and description populated.",
+        "severity": "info"
+      },
+      {
+        "category": "Package",
+        "name": "Thumbnail Asset Readiness",
+        "passed": true,
+        "details": "Thumbnail concept scored and visual asset linked.",
+        "severity": "info"
+      }
+    ],
+    "issues_identified": [],
+    "retry_required": false,
+    "affected_stage": null,
+    "recommendations": [
+      "All production quality standards met. Package ready for final human review."
+    ]
+  },
+  "validation_retry_count": 0,
+  "rendered_video_url": null,
+  "final_package": null,
+  "script_approved": true,
+  "production_approved": true,
+  "waiting_for_approval_type": null,
+  "activity_logs": [
+    {
+      "timestamp": "20:07:15",
+      "stage": "System",
+      "action": "Initialized project for 'Common Mistakes in BCS'",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:07:15",
+      "stage": "Content Strategy",
+      "action": "Analyzing topic, niche, and target viewer intent...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:07:15",
+      "stage": "Content Strategy",
+      "action": "Selected content angle: 'Why Everything You Knew About Common Mistakes in BCS Is Changing'",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:07:15",
+      "stage": "Title Agent",
+      "action": "Generating 5 YouTube title candidates...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:07:15",
+      "stage": "Title Agent",
+      "action": "Selected title: 'Common Mistakes in BCS (The 2026 Full Guide)'",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:07:15",
+      "stage": "Hook Agent",
+      "action": "Generating 5-15s opening retention hook...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:07:15",
+      "stage": "Hook Agent",
+      "action": "Generated opening hook with problem and value promise.",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:07:15",
+      "stage": "Script Agent",
+      "action": "Composing full structured script matching target duration...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:07:15",
+      "stage": "Script Agent",
+      "action": "Script complete (7 scenes). Pausing for Human Approval Gate: Review Script.",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:07:28",
+      "stage": "Human Approval",
+      "action": "Script approved by creator. Continuing production...",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:07:28",
+      "stage": "Storyboard Agent",
+      "action": "Translating script into production-ready scene storyboards...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:07:28",
+      "stage": "Storyboard Agent",
+      "action": "Created 7 production scenes with visual directions and prompts.",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:07:28",
+      "stage": "Voice Agent",
+      "action": "Synthesizing voiceover narration with Neural Voice Engine (Edge-TTS)...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:07:33",
+      "stage": "Human Approval",
+      "action": "Script approved by creator. Continuing production...",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:07:33",
+      "stage": "Visual Generation Agent",
+      "action": "Rendering scene visual cards with CreatorFlow Visual Engine (Local)...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "Visual Generation Agent",
+      "action": "Completed visual asset generation for 7 scenes.",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "Video Generation Agent",
+      "action": "Building dynamic scene motion clips with Local Ken-Burns Motion Engine...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "Video Generation Agent",
+      "action": "Video clip gen warning on scene 1: ",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "Video Generation Agent",
+      "action": "Video clip gen warning on scene 2: ",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "Video Generation Agent",
+      "action": "Video clip gen warning on scene 3: ",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "Video Generation Agent",
+      "action": "Video clip gen warning on scene 4: ",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "Video Generation Agent",
+      "action": "Video clip gen warning on scene 5: ",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "Video Generation Agent",
+      "action": "Video clip gen warning on scene 6: ",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "Video Generation Agent",
+      "action": "Video clip gen warning on scene 7: ",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "Video Generation Agent",
+      "action": "Motion clips compiled for storyboard sequence.",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "Thumbnail Agent",
+      "action": "Brainstorming 5 high-converting YouTube thumbnail concepts...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "Thumbnail Agent",
+      "action": "Generated 6 thumbnail options. Active selection: 'STOP USING CHATBOTS' (Score: 9.6/10).",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "SEO Agent",
+      "action": "Generating YouTube SEO metadata, timestamped chapters, and tags...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "SEO Agent",
+      "action": "Generated complete SEO package with chapters, tags, and pinned comment.",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "Quality Control Agent",
+      "action": "Running comprehensive quality inspection (Content, Production, Package)...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:07:34",
+      "stage": "Quality Control Agent",
+      "action": "Quality check PASSED. Pausing for Human Approval Gate: Approve Production.",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:07:38",
+      "stage": "Voice Agent",
+      "action": "Voiceover narration generated for all 7 scenes.",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:07:38",
+      "stage": "Video Generation Agent",
+      "action": "Building dynamic scene motion clips with Local Ken-Burns Motion Engine...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:07:38",
+      "stage": "Video Generation Agent",
+      "action": "Video clip gen warning on scene 1: ",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:07:38",
+      "stage": "Video Generation Agent",
+      "action": "Video clip gen warning on scene 2: ",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:07:38",
+      "stage": "Video Generation Agent",
+      "action": "Video clip gen warning on scene 3: ",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:07:38",
+      "stage": "Video Generation Agent",
+      "action": "Video clip gen warning on scene 4: ",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:07:38",
+      "stage": "Video Generation Agent",
+      "action": "Video clip gen warning on scene 5: ",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:07:38",
+      "stage": "Video Generation Agent",
+      "action": "Video clip gen warning on scene 6: ",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:07:38",
+      "stage": "Video Generation Agent",
+      "action": "Video clip gen warning on scene 7: ",
+      "details": null,
+      "status": "warning"
+    },
+    {
+      "timestamp": "20:07:38",
+      "stage": "Video Generation Agent",
+      "action": "Motion clips compiled for storyboard sequence.",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:07:46",
+      "stage": "Human Approval",
+      "action": "Production package approved by creator. Proceeding to video render...",
+      "details": null,
+      "status": "success"
+    },
+    {
+      "timestamp": "20:07:46",
+      "stage": "Video Assembly Engine",
+      "action": "Commencing FFmpeg video compositing (Visuals + Voice + Music + Text)...",
+      "details": null,
+      "status": "info"
+    },
+    {
+      "timestamp": "20:07:46",
+      "stage": "Video Assembly Engine",
+      "action": "Native FFmpeg assembly unavailable in environment (); engaging presentation package fallback.",
+      "details": null,
+      "status": "warning"
+    }
+  ],
+  "error_message": null
+}

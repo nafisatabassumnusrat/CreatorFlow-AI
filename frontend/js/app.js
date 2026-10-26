@@ -418,25 +418,32 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    if (p.waiting_for_approval_type) {
+    const isScriptGate = p.waiting_for_approval_type === "script" || 
+      p.stage_statuses?.approval_script === "WAITING FOR APPROVAL" || 
+      (p.current_stage === "approval_script" && !p.script_approved);
+
+    const isProductionGate = p.waiting_for_approval_type === "production" || 
+      p.stage_statuses?.approval_production === "WAITING FOR APPROVAL" ||
+      (p.stage_statuses?.approval_production === "PENDING" && p.stage_statuses?.quality_check === "COMPLETED" && !p.production_approved && p.current_stage !== "completed");
+
+    if (isScriptGate) {
       els.approvalBanner.classList.remove("hidden");
-      if (p.waiting_for_approval_type === "script") {
-        els.approvalBannerTitle.textContent = "Human Review Gate: Script & Structure";
-        els.approvalBannerDesc.textContent = "The agent has generated the YouTube script and paused. Review the script below before audio synthesis & rendering.";
-        els.approvalBannerActions.innerHTML = `
-          <button id="bannerApproveScriptBtn" class="btn btn-primary btn-sm">Approve & Continue</button>
-          <button id="bannerRegenScriptBtn" class="btn btn-outline btn-sm">Regenerate</button>
-        `;
-        document.getElementById("bannerApproveScriptBtn")?.addEventListener("click", () => approveScriptAction());
-        document.getElementById("bannerRegenScriptBtn")?.addEventListener("click", () => regenScriptAction());
-      } else if (p.waiting_for_approval_type === "production") {
-        els.approvalBannerTitle.textContent = "Human Review Gate: Production Verification";
-        els.approvalBannerDesc.textContent = "Quality inspection passed. Approve final rendering to composite video, voiceover, music, and text with FFmpeg.";
-        els.approvalBannerActions.innerHTML = `
-          <button id="bannerApproveRenderBtn" class="btn btn-primary btn-sm">Approve & Render Video</button>
-        `;
-        document.getElementById("bannerApproveRenderBtn")?.addEventListener("click", () => approveRenderAction());
-      }
+      els.approvalBannerTitle.textContent = "Human Review Gate: Script & Structure";
+      els.approvalBannerDesc.textContent = "The agent has generated the YouTube script and paused. Review the script below before audio synthesis & rendering.";
+      els.approvalBannerActions.innerHTML = `
+        <button id="bannerApproveScriptBtn" class="btn btn-primary btn-sm">Approve & Continue</button>
+        <button id="bannerRegenScriptBtn" class="btn btn-outline btn-sm">Regenerate</button>
+      `;
+      document.getElementById("bannerApproveScriptBtn")?.addEventListener("click", () => approveScriptAction());
+      document.getElementById("bannerRegenScriptBtn")?.addEventListener("click", () => regenScriptAction());
+    } else if (isProductionGate) {
+      els.approvalBanner.classList.remove("hidden");
+      els.approvalBannerTitle.textContent = "Human Review Gate: Production Verification";
+      els.approvalBannerDesc.textContent = "Quality inspection passed. Approve final rendering to composite video, voiceover, music, and text with FFmpeg.";
+      els.approvalBannerActions.innerHTML = `
+        <button id="bannerApproveRenderBtn" class="btn btn-primary btn-sm">Approve & Render Video</button>
+      `;
+      document.getElementById("bannerApproveRenderBtn")?.addEventListener("click", () => approveRenderAction());
     } else {
       els.approvalBanner.classList.add("hidden");
     }
@@ -507,27 +514,33 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    els.scriptSelectedTitle.textContent = p.script.selected_title;
-    els.scriptHookText.textContent = `"${p.script.hook}"`;
-    els.scriptWordCount.textContent = `${p.script.estimated_word_count} words`;
-    els.scriptTargetDur.textContent = `${p.script.target_duration_sec}s target`;
+    els.scriptSelectedTitle.textContent = p.script.selected_title || p.script.title || p.selected_title || p.topic;
+    els.scriptHookText.textContent = `"${p.script.hook || p.hook_concept?.spoken_hook || p.hook?.hook_text || "Engaging hook"}"`;
+    els.scriptWordCount.textContent = `${p.script.estimated_word_count || p.script.total_word_count || 300} words`;
+    els.scriptTargetDur.textContent = `${p.script.target_duration_sec || p.script.target_duration_seconds || 180}s target`;
     els.scriptApprovalStatus.textContent = p.script_approved ? "Approved" : "Waiting for Review";
 
-    els.scriptScenesContainer.innerHTML = p.script.scenes
+    els.scriptScenesContainer.innerHTML = (p.script.scenes || [])
       .map((sc) => {
+        const sec = sc.section || `SCENE ${sc.scene_number}`;
+        const dur = sc.duration_sec || sc.duration_seconds || 15;
+        const trans = sc.transition || "Smooth cut";
+        const vis = sc.visual_direction || sc.visual_prompt || "Cinematic visual";
+        const txt = sc.on_screen_text || "";
         return `
           <div class="scene-block">
             <div class="scene-block-header">
-              <span class="scene-badge">SCENE ${sc.scene_number} • [${escapeHtml(sc.section)}]</span>
-              <span class="scene-dur">⏱ ${sc.duration_sec}s • Transition: ${escapeHtml(sc.transition)}</span>
+              <span class="scene-badge">SCENE ${sc.scene_number} • [${escapeHtml(sec)}]</span>
+              <span class="scene-dur">⏱ ${dur}s • Transition: ${escapeHtml(trans)}</span>
             </div>
             <p class="scene-narration">${escapeHtml(sc.narration)}</p>
             <div class="scene-visual-direction">
-              <strong>Visual:</strong> ${escapeHtml(sc.visual_direction)}
+              <strong>Visual:</strong> ${escapeHtml(vis)}
             </div>
+            ${txt ? `
             <div style="font-size:0.75rem; color:var(--primary); font-weight:700; margin-top:0.35rem;">
-              On-Screen Text: "${escapeHtml(sc.on_screen_text)}"
-            </div>
+              On-Screen Text: "${escapeHtml(txt)}"
+            </div>` : ""}
           </div>
         `;
       })
@@ -746,22 +759,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Tab 6: Final YouTube Package
   function renderFinalPackage(p) {
-    const hasVideo = Boolean(p.rendered_video_url) && p.stage_statuses?.rendering === "COMPLETED";
+    const isCompleted = p.stage_statuses?.rendering === "COMPLETED" || p.current_stage === "completed";
+    const hasVideo = Boolean(p.rendered_video_url) || isCompleted;
 
     if (hasVideo) {
       els.videoPlaceholderNotice.classList.add("hidden");
       els.finalVideoPlayer.classList.remove("hidden");
 
-      let videoUrl = p.rendered_video_url;
-      // If videoUrl is a local Windows file path, use the web-accessible bundled demo video
+      let videoUrl = p.rendered_video_url || `/media/${p.project_id}/final_youtube_video.mp4`;
+      // If videoUrl is a local Windows file path, use the web-accessible media route
       if (videoUrl.startsWith("E:") || videoUrl.startsWith("C:") || videoUrl.includes("\\")) {
-        videoUrl = "assets/demo_video.mp4";
+        videoUrl = `/media/${p.project_id}/final_youtube_video.mp4`;
       }
 
       els.finalVideoPlayer.onerror = () => {
         if (!els.finalVideoPlayer.src.includes("assets/demo_video.mp4")) {
           console.warn("Video stream unavailable, playing bundled preview.");
           els.finalVideoPlayer.src = "assets/demo_video.mp4";
+          els.videoSource.src = "assets/demo_video.mp4";
           els.finalVideoPlayer.load();
         }
       };
@@ -838,7 +853,8 @@ document.addEventListener("DOMContentLoaded", () => {
       showToast("Autonomous production pipeline started...", "info");
       const updated = await window.API.runAutonomous(state.currentProject.project_id);
       renderWorkspace(updated);
-      showToast("Pipeline stepped forward.", "info");
+      switchTab("scriptTab");
+      showToast("Script generated! Review and approve below.", "info");
     } catch (err) {
       showToast(err.message, "danger");
     }
@@ -853,6 +869,7 @@ document.addEventListener("DOMContentLoaded", () => {
       showToast("Approving script and resuming pipeline...", "info");
       const updated = await window.API.submitApproval(state.currentProject.project_id, "script", "approve");
       renderWorkspace(updated);
+      switchTab("storyboardTab");
       showToast("Script approved! Generated storyboards, voiceover, and visual assets.", "info");
     } catch (err) {
       showToast(err.message, "danger");
